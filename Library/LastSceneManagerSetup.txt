@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/chicken.unity
+- path: Assets/Scenes/luna dog.unity
   isLoaded: 1
   isActive: 1
