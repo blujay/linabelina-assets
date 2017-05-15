@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4326119603740142}
   - component: {fileID: 33559061815230362}
   - component: {fileID: 23932683817213296}
-  - component: {fileID: 95779431371230038}
-  - component: {fileID: 64616378776339266}
+  - component: {fileID: 64016543476000064}
   m_Layer: 0
   m_Name: luna-dog
   m_TagString: Untagged
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1775567956639252}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.4345703, y: -0.0739583, z: -6.372986}
+  m_LocalPosition: {x: -0.4345703, y: -0.08, z: -6.372986}
   m_LocalScale: {x: 36.615746, y: 144.89732, z: 99.239}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +58,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 8e4fb32a0ab7b4bda96d4805d354b237, type: 2}
   - {fileID: 2100000, guid: eb3bf97471c2c49f1ab7adfc6f3873a8, type: 2}
   - {fileID: 2100000, guid: 3fc2e51ec1b0e49e5b0829167e2a8943, type: 2}
-  - {fileID: 2100000, guid: 592c93c62648449b280a53b4fb44f8ed, type: 2}
+  - {fileID: 2100000, guid: d836817f750d4489599b7688c9acebbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1775567956639252}
   m_Mesh: {fileID: 4300000, guid: 1c345095f661a455a8aa01d275cfa9eb, type: 3}
---- !u!64 &64616378776339266
+--- !u!64 &64016543476000064
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,20 +98,3 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 1c345095f661a455a8aa01d275cfa9eb, type: 3}
---- !u!95 &95779431371230038
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1775567956639252}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 1c345095f661a455a8aa01d275cfa9eb, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
