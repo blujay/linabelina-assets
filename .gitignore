@@ -1,7 +1,7 @@
-Library/
-Temp/
+Temp
 *.sln
 *.csproj
 *.userprefs
 build
 obj
+Library
