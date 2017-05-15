@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Egg.cs" />
+     <Compile Include="Assets\Scripts\Egg.cs" />
      <Compile Include="Assets\Sketchfab Exporter\ExporterSKFB.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_Accessor.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_AmbientLight.cs" />

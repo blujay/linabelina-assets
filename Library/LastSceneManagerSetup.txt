@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/egg-collecting.unity
+- path: Assets/scenes/chicken.unity
   isLoaded: 1
   isActive: 1
