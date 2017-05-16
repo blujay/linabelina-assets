@@ -13,4 +13,11 @@ public class Egg : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.CompareTag("Lina")) {
+			GameObject.Destroy(gameObject);
+		}
+	}
 }

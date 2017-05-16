@@ -44,7 +44,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
         private float m_currentCrouchOffset;
 
-        private const float m_CROUCH_OFFSET = 0.5f;
+        private const float m_CROUCH_OFFSET = 0.25f;
 
         // Use this for initialization
         private void Start()
@@ -78,7 +78,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_IsCrouching = !m_IsCrouching;
                 if (m_IsCrouching)
                 {
-                    m_currentCrouchOffset = m_CROUCH_OFFSET;
+                    m_currentCrouchOffset = GetComponent<CharacterController>().height * m_CROUCH_OFFSET;
                 }
                 else
                 {
@@ -202,6 +202,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
+			Debug.Log(m_currentCrouchOffset);
             if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded)
             {
                 m_Camera.transform.localPosition =
@@ -273,5 +274,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
-    }
+
+		private void OnCollisionEnter(Collision collision)
+		{
+			if (collision.gameObject.CompareTag("Egg")) {
+				Debug.Log("Egg collected");
+			}
+		}
+	}
 }

@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class EggCollector : MonoBehaviour {
 
+	Animator handAnimator;
+
 	// Use this for initialization
 	void Start () {
-		
+		handAnimator = transform.Find("FirstPersonCharacter").transform.Find("hand").GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-	private void OnControllerColliderHit(ControllerColliderHit hit)
-	{
-		if(hit.gameObject.CompareTag("Egg")) {
-			GameObject.Destroy(hit.gameObject);
+		if (Input.GetMouseButtonDown(0)) {
+			handAnimator.SetTrigger("Reach");
 		}
 	}
 }
