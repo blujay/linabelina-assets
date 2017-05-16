@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1724521869858192}
-  m_LocalRotation: {x: -0.53512454, y: 0.46221402, z: 0.46221405, w: 0.5351244}
-  m_LocalPosition: {x: 24.85, y: 2.59, z: 6.73}
-  m_LocalScale: {x: 148.62904, y: 272.37628, z: 73.103}
+  m_LocalRotation: {x: -0.00014034614, y: 0.70710677, z: 0.70710677, w: 0.00014034614}
+  m_LocalPosition: {x: 27.120186, y: -2.36, z: 2.8017397}
+  m_LocalScale: {x: 218.81042, y: 272.37653, z: 73.103}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 81.638}
+  m_LocalEulerAnglesHint: {x: -89.99999, y: 180, z: -0.023010254}
 --- !u!23 &23353000306948914
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f1886da0074694221a5a8563c574372e, type: 2}
+  - {fileID: 2100000, guid: 9f7e59ad1f65045b799296cbc77fff76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,7 +89,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1724521869858192}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
