@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4268560935125646}
   - component: {fileID: 33877228533583320}
   - component: {fileID: 23575010373547884}
-  - component: {fileID: 64363326866087050}
-  - component: {fileID: 54930785534203536}
   - component: {fileID: 114562398832671600}
+  - component: {fileID: 54115278879105238}
+  - component: {fileID: 135610586794559184}
   m_Layer: 0
   m_Name: egg-chicken
   m_TagString: Egg
@@ -38,12 +38,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1891389671265596}
   m_LocalRotation: {x: -0.67694515, y: 0.26798487, z: 0.08155729, w: 0.6806452}
-  m_LocalPosition: {x: 1.5187731, y: 4.898553, z: 0.14000028}
-  m_LocalScale: {x: 100.00003, y: 100.00004, z: 100.00004}
+  m_LocalPosition: {x: -7.57, y: 6.53, z: 0.14}
+  m_LocalScale: {x: 100.000626, y: 100.00098, z: 100.00062}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -183.448, y: -94.57199, z: 28.429993}
+  m_LocalEulerAnglesHint: {x: -128.665, y: -141.40799, z: 119.569}
 --- !u!23 &23575010373547884
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -83,7 +83,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1891389671265596}
   m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
---- !u!54 &54930785534203536
+--- !u!54 &54115278879105238
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -98,20 +98,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64363326866087050
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1891389671265596}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
 --- !u!114 &114562398832671600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,3 +109,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 871534034921a0046ab13ef0843f8204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135610586794559184
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891389671265596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.005
+  m_Center: {x: 0.0000026486803, y: -0.000017338129, z: 0.002593848}
