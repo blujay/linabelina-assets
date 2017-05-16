@@ -9,45 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1775567956639252}
+  m_RootGameObject: {fileID: 1891389671265596}
   m_IsPrefabParent: 1
---- !u!1 &1775567956639252
+--- !u!1 &1891389671265596
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4326119603740142}
-  - component: {fileID: 33559061815230362}
-  - component: {fileID: 23932683817213296}
-  - component: {fileID: 64016543476000064}
+  - component: {fileID: 4268560935125646}
+  - component: {fileID: 33877228533583320}
+  - component: {fileID: 23575010373547884}
+  - component: {fileID: 64363326866087050}
+  - component: {fileID: 54930785534203536}
   m_Layer: 0
-  m_Name: luna-dog
-  m_TagString: Untagged
+  m_Name: egg-chicken
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4326119603740142
+--- !u!4 &4268560935125646
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1775567956639252}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.4345703, y: -0.08, z: -6.372986}
-  m_LocalScale: {x: 36.615746, y: 144.89732, z: 99.239}
+  m_GameObject: {fileID: 1891389671265596}
+  m_LocalRotation: {x: -0.67694515, y: 0.26798487, z: 0.08155729, w: 0.6806452}
+  m_LocalPosition: {x: 1.5187731, y: 4.898553, z: 0.14000028}
+  m_LocalScale: {x: 100.00003, y: 100.00004, z: 100.00004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23932683817213296
+  m_LocalEulerAnglesHint: {x: -183.448, y: -94.57199, z: 28.429993}
+--- !u!23 &23575010373547884
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1775567956639252}
+  m_GameObject: {fileID: 1891389671265596}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -55,10 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 8e4fb32a0ab7b4bda96d4805d354b237, type: 2}
-  - {fileID: 2100000, guid: eb3bf97471c2c49f1ab7adfc6f3873a8, type: 2}
-  - {fileID: 2100000, guid: 3fc2e51ec1b0e49e5b0829167e2a8943, type: 2}
-  - {fileID: 2100000, guid: d836817f750d4489599b7688c9acebbb, type: 2}
+  - {fileID: 2100000, guid: a07b35923eea54c5dbbdb4d596e1bfed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,24 +75,39 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33559061815230362
+--- !u!33 &33877228533583320
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1775567956639252}
-  m_Mesh: {fileID: 4300000, guid: 1c345095f661a455a8aa01d275cfa9eb, type: 3}
---- !u!64 &64016543476000064
+  m_GameObject: {fileID: 1891389671265596}
+  m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
+--- !u!54 &54930785534203536
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891389671265596}
+  serializedVersion: 2
+  m_Mass: 2
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &64363326866087050
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1775567956639252}
+  m_GameObject: {fileID: 1891389671265596}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 1c345095f661a455a8aa01d275cfa9eb, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
