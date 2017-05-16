@@ -38,16 +38,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private CollisionFlags m_CollisionFlags;
         private bool m_PreviouslyGrounded;
         private Vector3 m_OriginalCameraPosition;
-        private float m_StepCycle;
+        private Vector3 m_PreviousCameraPosition;
+		private float m_StepCycle;
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-        private float m_currentCrouchOffset;
+		private float m_goalCameraPosition;
 
         private const float m_CROUCH_OFFSET = 0.25f;
+		private const float m_CROUCH_TIME = 4;
+		private float m_cameraMoveTimer = 0;
+		private bool m_crouchAnimActive = false;
 
-        // Use this for initialization
-        private void Start()
+		// Use this for initialization
+		private void Start()
         {
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
@@ -55,7 +59,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_FovKick.Setup(m_Camera);
             m_HeadBob.Setup(m_Camera, m_StepInterval);
             m_StepCycle = 0f;
-            m_currentCrouchOffset = 0;
             m_NextStep = m_StepCycle/2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
@@ -78,13 +81,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_IsCrouching = !m_IsCrouching;
                 if (m_IsCrouching)
                 {
-                    m_currentCrouchOffset = GetComponent<CharacterController>().height * m_CROUCH_OFFSET;
-                }
-                else
-                {
-                    m_currentCrouchOffset = 0;
-                }
-            }
+					m_goalCameraPosition = m_OriginalCameraPosition.y - GetComponent<CharacterController>().height * m_CROUCH_OFFSET;
+                } else {
+					m_goalCameraPosition = m_OriginalCameraPosition.y;
+				}
+				m_PreviousCameraPosition = m_Camera.transform.localPosition;
+				m_crouchAnimActive = true;
+				m_cameraMoveTimer = 0;
+			}
+			if (m_crouchAnimActive) {
+				m_cameraMoveTimer = Mathf.Clamp(m_cameraMoveTimer + Time.deltaTime*m_CROUCH_TIME, m_cameraMoveTimer + Time.deltaTime* m_CROUCH_TIME, 1);
+				if(m_cameraMoveTimer == 1) {
+					m_crouchAnimActive = false;
+				}
+			}
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -202,20 +212,27 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
-			Debug.Log(m_currentCrouchOffset);
-            if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded)
+
+            if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded && !m_IsCrouching)
             {
                 m_Camera.transform.localPosition =
                     m_HeadBob.DoHeadBob(m_CharacterController.velocity.magnitude +
                                       (speed*(m_IsWalking ? 1f : m_RunstepLenghten)));
                 newCameraPosition = m_Camera.transform.localPosition;
-                newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset() - m_currentCrouchOffset;
+                newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
             }
-            else
+            else if(m_crouchAnimActive) {
+				newCameraPosition = m_Camera.transform.localPosition;
+				newCameraPosition.y = Mathf.Lerp(m_PreviousCameraPosition.y, m_goalCameraPosition, m_cameraMoveTimer);
+			}
+			else if(!m_IsCrouching)
             {
                 newCameraPosition = m_Camera.transform.localPosition;
-                newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset() - m_currentCrouchOffset;
-            }
+                newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
+            } else {
+				newCameraPosition = m_Camera.transform.localPosition;
+				newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
+			}
             m_Camera.transform.localPosition = newCameraPosition;
         }
 
