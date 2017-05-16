@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Egg : MonoBehaviour {
+public class EggCollector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,5 +12,12 @@ public class Egg : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	private void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		if(hit.gameObject.CompareTag("Egg")) {
+			GameObject.Destroy(hit.gameObject);
+		}
 	}
 }
