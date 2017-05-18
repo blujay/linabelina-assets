@@ -58,6 +58,8 @@ ModelImporter:
     7400018: chicken-rig|sitting
     7400020: chicken-rig|walking
     7400022: chicken-rig|standing-up
+    7400024: chicken-rig|sitting-down
+    7400026: chicken-rig|sitting-idle
     9500000: //RootNode
     13700000: Chicken
   materials:
