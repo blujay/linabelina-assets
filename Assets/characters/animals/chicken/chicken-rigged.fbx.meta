@@ -24,6 +24,7 @@ ModelImporter:
     100032: spine
     100034: tail
     100036: tail_end
+    100038: chicken-rig
     400000: Armature
     400002: bone
     400004: bone_end
@@ -43,12 +44,20 @@ ModelImporter:
     400032: spine
     400034: tail
     400036: tail_end
+    400038: chicken-rig
     4300000: Chicken
     7400000: Armature|idle
     7400002: Armature|PoseLib
     7400004: Armature|rest
     7400006: Armature|walking
     7400008: Armature|pecking
+    7400010: chicken-rig|idle
+    7400012: chicken-rig|pecking
+    7400014: chicken-rig|PoseLib
+    7400016: chicken-rig|rest
+    7400018: chicken-rig|sitting
+    7400020: chicken-rig|walking
+    7400022: chicken-rig|standing-up
     9500000: //RootNode
     13700000: Chicken
   materials:
