@@ -47,7 +47,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 			cam.type = "orthographic";
 			cam.zfar = tr.GetComponent<Camera>().farClipPlane;
 			cam.znear = tr.GetComponent<Camera>().nearClipPlane;
-			cam.name = tr.name;
+			cam.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 			//cam.orthographic.xmag = tr.camera.
 			GlTF_Writer.cameras.Add(cam);
 		}
@@ -60,7 +60,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 			cam.znear = tr.GetComponent<Camera>().nearClipPlane;
 			cam.aspect_ratio = tr.GetComponent<Camera>().aspect;
 			cam.yfov = tr.GetComponent<Camera>().fieldOfView;
-			cam.name = tr.name;
+			cam.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 			GlTF_Writer.cameras.Add(cam);
 		}
 	}
@@ -82,28 +82,28 @@ public class SceneToGlTFWiz : MonoBehaviour
 			case LightType.Point:
 				GlTF_PointLight pl = new GlTF_PointLight();
 				pl.color = new GlTF_ColorRGB(tr.GetComponent<Light>().color);
-				pl.name = tr.name;
+				pl.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 				GlTF_Writer.lights.Add(pl);
 				break;
 
 			case LightType.Spot:
 				GlTF_SpotLight sl = new GlTF_SpotLight();
 				sl.color = new GlTF_ColorRGB(tr.GetComponent<Light>().color);
-				sl.name = tr.name;
+				sl.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 				GlTF_Writer.lights.Add(sl);
 				break;
 
 			case LightType.Directional:
 				GlTF_DirectionalLight dl = new GlTF_DirectionalLight();
 				dl.color = new GlTF_ColorRGB(tr.GetComponent<Light>().color);
-				dl.name = tr.name;
+				dl.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 				GlTF_Writer.lights.Add(dl);
 				break;
 
 			case LightType.Area:
 				GlTF_AmbientLight al = new GlTF_AmbientLight();
 				al.color = new GlTF_ColorRGB(tr.GetComponent<Light>().color);
-				al.name = tr.name;
+				al.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 				GlTF_Writer.lights.Add(al);
 				break;
 		}
@@ -192,7 +192,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 			// Initialize the node
 			GlTF_Node node = new GlTF_Node();
 			node.id = GlTF_Node.GetNameFromObject(tr);
-			node.name = tr.name;
+			node.name = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 
 			if (tr.GetComponent<Camera>() != null)
 				parseUnityCamera(tr);
@@ -204,7 +204,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 			if (m != null)
 			{
 				GlTF_Mesh mesh = new GlTF_Mesh();
-				mesh.name = GlTF_Mesh.GetNameFromObject(m) + tr.name;
+				mesh.name = GlTF_Writer.cleanNonAlphanumeric(GlTF_Mesh.GetNameFromObject(m) + tr.name);
 
 				GlTF_Accessor positionAccessor = new GlTF_Accessor(GlTF_Accessor.GetNameFromObject(m, "position"), GlTF_Accessor.Type.VEC3, GlTF_Accessor.ComponentType.FLOAT);
 				positionAccessor.bufferView = GlTF_Writer.vec3BufferView;
@@ -314,7 +314,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 						else
 						{
 							GlTF_Material material = new GlTF_Material();
-							material.name = mat.name;
+							material.name = GlTF_Writer.cleanNonAlphanumeric(mat.name);
 							primitive.materialIndex = GlTF_Writer.materials.Count;
 							GlTF_Writer.materialNames.Add(matName);
 							GlTF_Writer.materials.Add (material);
@@ -490,7 +490,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 					for (int i = 0; i < clips.Length; i++)
 					{
 						//FIXME It seems not good to generate one animation per animator.
-						GlTF_Animation anim = new GlTF_Animation(a.name, node.name);
+						GlTF_Animation anim = new GlTF_Animation(GlTF_Writer.cleanNonAlphanumeric(a.name));
 						anim.Populate(clips[i], tr, GlTF_Writer.bakeAnimation);
 						if(anim.channels.Count > 0)
 							GlTF_Writer.animations.Add(anim);
@@ -502,7 +502,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 				{
 					AnimationClip clip = animation.clip;
 					//FIXME It seems not good to generate one animation per animator.
-					GlTF_Animation anim = new GlTF_Animation(animation.name, node.name);
+					GlTF_Animation anim = new GlTF_Animation(GlTF_Writer.cleanNonAlphanumeric(animation.name));
 					anim.Populate(clip, tr, GlTF_Writer.bakeAnimation);
 					if (anim.channels.Count > 0)
 						GlTF_Writer.animations.Add(anim);
@@ -544,10 +544,10 @@ public class SceneToGlTFWiz : MonoBehaviour
 
 			if (tr.GetComponent<Camera>() != null)
 			{
-				node.cameraName = tr.name;
+				node.cameraName = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 			}
 			else if (tr.GetComponent<Light>() != null)
-				node.lightName = tr.name;
+				node.lightName = GlTF_Writer.cleanNonAlphanumeric(tr.name);
 
 			// Parse node's skin data
 			GlTF_Accessor invBindMatrixAccessor = null;
@@ -557,7 +557,7 @@ public class SceneToGlTFWiz : MonoBehaviour
 				node.skeletons = GlTF_Skin.findRootSkeletons(skinMesh);
 				GlTF_Skin skin = new GlTF_Skin();
 				skin.setBindShapeMatrix(tr);
-				skin.name = skinMesh.rootBone.name + "_skeleton_" + node.name + tr.GetInstanceID();
+				skin.name = GlTF_Writer.cleanNonAlphanumeric(skinMesh.rootBone.name) + "_skeleton_" + GlTF_Writer.cleanNonAlphanumeric(node.name) + tr.GetInstanceID();
 
 				// Create invBindMatrices accessor
 				invBindMatrixAccessor = new GlTF_Accessor(skin.name + "invBindMatrices", GlTF_Accessor.Type.MAT4, GlTF_Accessor.ComponentType.FLOAT);
@@ -994,8 +994,11 @@ public class SceneToGlTFWiz : MonoBehaviour
 						if (isBumpTexture)
 						{
 							TextureImporter im = AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(t)) as TextureImporter;
-							isBumpMap = im.convertToNormalmap;
-							val.name = isBumpMap ? "bumpTexture" : "normalTexture";
+							if(im)
+							{
+								isBumpMap = im.convertToNormalmap;
+								val.name = isBumpMap ? "bumpTexture" : "normalTexture";
+							}
 						}
 						else
 						{
@@ -1026,6 +1029,11 @@ public class SceneToGlTFWiz : MonoBehaviour
 							}
 
 							var texPath = ExportTexture(t, savedPath, false, format);
+							if(texPath.Length == 0)
+							{
+								Debug.Log("Failed to process texture for property '" + pName + "' in material '" + mat.name + "'");
+								continue;
+							}
 
 							GlTF_Texture texture = new GlTF_Texture();
 							texture.name = texName;
@@ -1088,10 +1096,15 @@ public class SceneToGlTFWiz : MonoBehaviour
 		}
 	}
 
-	private void getPixelsFromTexture(ref Texture2D texture, out Color[] pixels, IMAGETYPE imageFormat)
+	private bool getPixelsFromTexture(ref Texture2D texture, out Color[] pixels, IMAGETYPE imageFormat)
 	{
 		//Make texture readable
 		TextureImporter im = AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(texture)) as TextureImporter;
+		if(!im)
+		{
+			pixels = new Color[1];
+			return false;
+		}
 		bool readable = im.isReadable;
 		TextureImporterCompression format = im.textureCompression;
 		TextureImporterType type = im.textureType;
@@ -1117,6 +1130,8 @@ public class SceneToGlTFWiz : MonoBehaviour
 
 		im.textureCompression = format;
 		im.SaveAndReimport();
+
+		return true;
 	}
 
 	// Flip all images on Y and
@@ -1125,7 +1140,11 @@ public class SceneToGlTFWiz : MonoBehaviour
 		int height = inputTexture.height;
 		int width = inputTexture.width;
 		Color[] textureColors = new Color[inputTexture.height * inputTexture.width];
-		getPixelsFromTexture(ref inputTexture, out textureColors, format);
+		if(!getPixelsFromTexture(ref inputTexture, out textureColors, format))
+		{
+			Debug.Log("Failed to convert texture " + inputTexture.name + " (unsupported type or format)");
+			return "";
+		}
 		Color[] newTextureColors = new Color[inputTexture.height * inputTexture.width];
 
 		for (int i = 0; i < height; ++i)
