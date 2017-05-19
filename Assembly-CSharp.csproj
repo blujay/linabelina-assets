@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{58DE2866-02F8-D284-905E-664410C2C971}</ProjectGuid>
+    <ProjectGuid>{68361C7A-B91F-E4CF-6077-A47AA99D2898}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Egg.cs" />
+     <Compile Include="Assets\Scripts\EggCollector.cs" />
+     <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\Sketchfab Exporter\ExporterSKFB.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_Accessor.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_AmbientLight.cs" />
@@ -116,12 +118,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>/Users/jay/Documents/Art/Projects/linabelina/linabelina-assets/lina-belina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
+ <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/System.Drawing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B1B9B72D-0C65-2010-E83B-14DD466D198B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{38B7A3AB-5ACE-212E-84D3-B811B757906C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

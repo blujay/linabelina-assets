@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{894F3FC9-31CE-C809-6BE3-43CE01711C7F}</ProjectGuid>
+    <ProjectGuid>{2F0FF2A2-98E3-FD57-8F1E-21F62F6EB01A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -107,12 +107,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>/Users/jay/Documents/Art/Projects/linabelina/linabelina-assets/lina-belina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
+ <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/System.Drawing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B1B9B72D-0C65-2010-E83B-14DD466D198B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{38B7A3AB-5ACE-212E-84D3-B811B757906C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
