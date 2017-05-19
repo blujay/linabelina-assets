@@ -23,7 +23,7 @@ public class chicken : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		chickenAnimator = GetComponent<Animator>();
+		chickenAnimator = transform.Find("chicken-rigged").GetComponent<Animator>();
 		SetToResting();
 	}
 	
