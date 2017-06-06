@@ -20,6 +20,7 @@ public class chicken : MonoBehaviour {
 	ChickenAnimationState currentState = ChickenAnimationState.RESTING;
 	float timeToNextStateChange = 0;
 	Vector3 goalPosition;
+	private const float MAX_VELOCITY = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -48,16 +49,19 @@ public class chicken : MonoBehaviour {
 				case 2:
 					currentState = ChickenAnimationState.WALKING;
 					chickenAnimator.SetBool("walking", true);
-					goalPosition = transform.position - transform.forward*Random.Range(1.5f, 3.5f);
+					goalPosition = new Vector3(transform.position.x + Random.Range(-2.5f, 2.5f), transform.position.y, transform.position.z + Random.Range(-2.5f, 2.5f));
 					break;
 			}
 		}
 
 		if(Vector3.Distance(transform.position, goalPosition) > 0.2f) {
-			Vector3 newPosition = transform.position + (goalPosition - transform.position).normalized * Time.deltaTime;
-			transform.position = newPosition;
+			Vector3 goalVelocity = (goalPosition - transform.position).normalized;
+			Vector3 steering = goalVelocity - transform.forward;
+			//now I need to rotate the chicken
+			//transform.Rotate()
+			//Vector3 newPosition = transform.position + ;
+			//transform.position = newPosition;
 		} else if(currentState == ChickenAnimationState.WALKING) {
-			goalPosition = transform.position;
 			chickenAnimator.SetBool("walking", false);
 			SetToResting();
 		}
@@ -65,6 +69,7 @@ public class chicken : MonoBehaviour {
 
 	void SetToResting()
 	{
+		goalPosition = transform.position;
 		currentState = ChickenAnimationState.RESTING;
 		timeToNextStateChange = Random.Range(MinIdleTime, MaxIdleTime);
 	}
