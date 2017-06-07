@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Egg.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
+     <Compile Include="Assets\Scripts\IKControl.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\Sketchfab Exporter\ExporterSKFB.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_Accessor.cs" />
