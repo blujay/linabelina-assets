@@ -2392,7 +2392,7 @@ MonoBehaviour:
   target: {fileID: 744923011}
   distance: 8
   height: 4
-  rotationDamping: 2
+  rotationDamping: 10
   heightDamping: 10
 --- !u!81 &355819455
 AudioListener:
@@ -2433,7 +2433,7 @@ Camera:
     height: 1
   near clip plane: 0.55
   far clip plane: 999.22
-  field of view: 67
+  field of view: 124
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
