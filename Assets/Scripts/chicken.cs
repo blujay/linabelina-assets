@@ -8,6 +8,8 @@ public class chicken : MonoBehaviour {
 	public float MinIdleTime = 1;
 	[Tooltip("Maximum time that the chicken will remain in rest state")]
 	public float MaxIdleTime = 3;
+	[Tooltip("Speed that the chicken will turn towards what it is aiming for")]
+	public float MaxRotationSpeed = 30;
 
 	Animator chickenAnimator;
 	enum ChickenAnimationState
@@ -20,6 +22,8 @@ public class chicken : MonoBehaviour {
 	ChickenAnimationState currentState = ChickenAnimationState.RESTING;
 	float timeToNextStateChange = 0;
 	Vector3 goalPosition;
+	private const float MAX_VELOCITY = 2;
+	private float overallDistance;
 
 	// Use this for initialization
 	void Start () {
@@ -48,16 +52,30 @@ public class chicken : MonoBehaviour {
 				case 2:
 					currentState = ChickenAnimationState.WALKING;
 					chickenAnimator.SetBool("walking", true);
-					goalPosition = transform.position - transform.forward*Random.Range(1.5f, 3.5f);
+					goalPosition = new Vector3(transform.position.x + Random.Range(-10.5f, 10.5f), transform.position.y, transform.position.z + Random.Range(-10.5f, 10.5f));
+					overallDistance = Vector3.Distance(transform.position, goalPosition);
+					//GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+					//goal.transform.position = new Vector3(goalPosition.x, 3, goalPosition.z);
 					break;
 			}
 		}
 
-		if(Vector3.Distance(transform.position, goalPosition) > 0.2f) {
-			Vector3 newPosition = transform.position + (goalPosition - transform.position).normalized * Time.deltaTime;
+		float currentDistance = Vector3.Distance(transform.position, goalPosition);
+		if (currentDistance > 0.2f) {
+			Vector3 goalVelocity = (goalPosition - transform.position).normalized;
+			float aimAngle = Mathf.Atan2(transform.forward.z, transform.forward.x) - Mathf.Atan2(goalVelocity.z, goalVelocity.x);
+
+			if (aimAngle > Mathf.PI) {
+				aimAngle -= 2 * Mathf.PI;
+			} else if (aimAngle < -1 * Mathf.PI) {
+				aimAngle += 2 * Mathf.PI;
+			}
+
+			//float rotationSpeed = MaxRotationSpeed*Mathf.Abs(1-(currentDistance-0.1f)/overallDistance);
+			transform.Rotate(Vector3.up, aimAngle*Time.deltaTime* MaxRotationSpeed);
+			Vector3 newPosition = transform.position + transform.forward * Time.deltaTime;
 			transform.position = newPosition;
 		} else if(currentState == ChickenAnimationState.WALKING) {
-			goalPosition = transform.position;
 			chickenAnimator.SetBool("walking", false);
 			SetToResting();
 		}
@@ -65,6 +83,7 @@ public class chicken : MonoBehaviour {
 
 	void SetToResting()
 	{
+		goalPosition = transform.position;
 		currentState = ChickenAnimationState.RESTING;
 		timeToNextStateChange = Random.Range(MinIdleTime, MaxIdleTime);
 	}
