@@ -52,17 +52,19 @@ public class chicken : MonoBehaviour {
 				case 2:
 					currentState = ChickenAnimationState.WALKING;
 					chickenAnimator.SetBool("walking", true);
-					goalPosition = new Vector3(transform.position.x + Random.Range(-10.5f, 10.5f), transform.position.y, transform.position.z + Random.Range(-10.5f, 10.5f));
-					overallDistance = Vector3.Distance(transform.position, goalPosition);
-					//GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-					//goal.transform.position = new Vector3(goalPosition.x, 3, goalPosition.z);
+					goalPosition = new Vector3(transform.localPosition.x + Random.Range(-10.5f, 10.5f), transform.localPosition.y, transform.localPosition.z + Random.Range(-10.5f, 10.5f));
+					overallDistance = Vector3.Distance(transform.localPosition, goalPosition);
+
+					//this is just a visualisation of the point the chicken is aiming for. It should only be uncommented when debugging
+					GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+					goal.transform.position = new Vector3(goalPosition.x, goalPosition.y + 2, goalPosition.z);
 					break;
 			}
 		}
 
-		float currentDistance = Vector3.Distance(transform.position, goalPosition);
+		float currentDistance = Vector3.Distance(transform.localPosition, goalPosition);
 		if (currentDistance > 0.2f) {
-			Vector3 goalVelocity = (goalPosition - transform.position).normalized;
+			Vector3 goalVelocity = (goalPosition - transform.localPosition).normalized;
 			float aimAngle = Mathf.Atan2(transform.forward.z, transform.forward.x) - Mathf.Atan2(goalVelocity.z, goalVelocity.x);
 
 			if (aimAngle > Mathf.PI) {
@@ -83,7 +85,7 @@ public class chicken : MonoBehaviour {
 
 	void SetToResting()
 	{
-		goalPosition = transform.position;
+		goalPosition = transform.localPosition;
 		currentState = ChickenAnimationState.RESTING;
 		timeToNextStateChange = Random.Range(MinIdleTime, MaxIdleTime);
 	}
