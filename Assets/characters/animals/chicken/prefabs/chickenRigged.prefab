@@ -652,7 +652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinIdleTime: 1
   MaxIdleTime: 3
-  RotationSpeed: 40
+  MaxRotationSpeed: 30
 --- !u!137 &137141971270126376
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
