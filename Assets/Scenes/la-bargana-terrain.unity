@@ -2433,7 +2433,7 @@ Camera:
     height: 1
   near clip plane: 0.55
   far clip plane: 999.22
-  field of view: 124
+  field of view: 69
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -9994,7 +9994,7 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 2100000, guid: 1507ee15e467142398911bec2ff39988, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: d135a2eb9f8004909b9f357f4ea911fb, type: 2}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 0.0512
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
@@ -13232,8 +13232,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9338235, g: 0.9338235, b: 0.5561743, a: 1}
-  m_Intensity: 1.87
+  m_Color: {r: 0.97794116, g: 0.90454596, b: 0.71188366, a: 1}
+  m_Intensity: 1.35
   m_Range: 14.92
   m_SpotAngle: 30
   m_CookieSize: 1
