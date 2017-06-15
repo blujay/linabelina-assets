@@ -60,19 +60,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: a7aaddee5b2284232b913ad204d12728, type: 3}
+        m_Texture: {fileID: 2800000, guid: ab43bcb4e2bba4a428de98c5562b7e1a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e02386befd3d14b8c84401ef52ba2e41, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4ea4f7af0e22047429bc05951d11e8d4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 03be3dcde5b4047778e48a0d7c92ed13, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7a78510b9dc454ce28675f7ea3e733ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 57eb83cc40cf7444b9fa680364589b94, type: 3}
+        m_Texture: {fileID: 2800000, guid: c3a4e34aee4a64891b4c9b965dc36076, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -104,15 +104,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: a7aaddee5b2284232b913ad204d12728, type: 3}
+        m_Texture: {fileID: 2800000, guid: ab43bcb4e2bba4a428de98c5562b7e1a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e02386befd3d14b8c84401ef52ba2e41, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4ea4f7af0e22047429bc05951d11e8d4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 57eb83cc40cf7444b9fa680364589b94, type: 3}
+        m_Texture: {fileID: 2800000, guid: c3a4e34aee4a64891b4c9b965dc36076, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 1091
-  materialHash: 7604b61a8d25cce86f58652ed47c96b76291456
+  materialHash: 6a59adcacfb1e90b646de96dffcee21e6291456
   root:
     _uniqueID: 1
     seed: 3768357
@@ -395,17 +395,17 @@ MonoBehaviour:
     rootSpread: 5.96
     groundOffset: 0
     rootMatrix:
-      e00: 1
+      e00: -0.31296054
       e01: 0
-      e02: 0
+      e02: -0.94976616
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: 0
+      e20: 0.94976616
       e21: 0
-      e22: 1
+      e22: -0.31296054
       e23: 0
       e30: 0
       e31: 0
@@ -1510,17 +1510,17 @@ MonoBehaviour:
     pitch: -0
     rotation: {x: 0, y: 0, z: 0, w: 1}
     matrix:
-      e00: 1
+      e00: -0.31296054
       e01: 0
-      e02: 0
+      e02: -0.94976616
       e03: 0
       e10: 0
       e11: 1
       e12: 0
       e13: 0
-      e20: 0
+      e20: 0.94976616
       e21: 0
-      e22: 1
+      e22: -0.31296054
       e23: 0
       e30: 0
       e31: 0
