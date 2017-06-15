@@ -257,6 +257,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4166810533615266}
+  - component: {fileID: 135329307383517708}
   m_Layer: 0
   m_Name: calendula bush
   m_TagString: Untagged
@@ -296,8 +297,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792015755268644}
-  m_LocalRotation: {x: -0.42619509, y: -0.47895116, z: 0.09766616, w: 0.76119965}
-  m_LocalPosition: {x: 279.79373, y: 30.718, z: -5.591}
+  m_LocalRotation: {x: -0.37042585, y: -0.87691903, z: -0.23230502, w: 0.19957983}
+  m_LocalPosition: {x: 5.5910006, y: -16.13, z: -2.3062744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4745386237790694}
@@ -324,7 +325,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1678682431798940}
   m_LocalRotation: {x: -0.30351317, y: 0.06245944, z: 0.31135815, w: 0.89835113}
-  m_LocalPosition: {x: -0.016, y: -0.028, z: 0.047}
+  m_LocalPosition: {x: 0.01, y: -0.015, z: 0.006}
   m_LocalScale: {x: 1.0743304, y: 1.0743297, z: 1.0743297}
   m_Children: []
   m_Father: {fileID: 4166810533615266}
@@ -428,7 +429,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1759752032777412}
   m_LocalRotation: {x: -0.38272327, y: 0.35315475, z: 0.33795658, w: 0.78395796}
-  m_LocalPosition: {x: -0.016, y: -0.028, z: 0.047}
+  m_LocalPosition: {x: 0.01, y: -0.015, z: 0.006}
   m_LocalScale: {x: 1.4979753, y: 1.4979764, z: 1.4979764}
   m_Children: []
   m_Father: {fileID: 4166810533615266}
@@ -454,7 +455,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1455874193896810}
   m_LocalRotation: {x: -0.51088625, y: 0.4860558, z: 0.38791013, w: 0.5935241}
-  m_LocalPosition: {x: -0.016, y: -0.028, z: 0.047}
+  m_LocalPosition: {x: 0.01, y: -0.015, z: 0.006}
   m_LocalScale: {x: 1.2057751, y: 1.2057744, z: 1.2057744}
   m_Children: []
   m_Father: {fileID: 4166810533615266}
@@ -1047,3 +1048,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077024013300622}
   m_Mesh: {fileID: 4300000, guid: 3034365c3b22e4ccca0772ec0fae01fc, type: 3}
+--- !u!135 &135329307383517708
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792015755268644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5909503
+  m_Center: {x: 0.7666492, y: 0.7044029, z: 0.23380934}
