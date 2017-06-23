@@ -1,0 +1,383 @@
+fileFormatVersion: 2
+guid: ecd67424945f8441682b7cad96ef68b5
+timeCreated: 1497910376
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: house
+    100004: Lamp
+    100006: Mountains
+    100008: sea
+    100010: //RootNode
+    100012: antebrazo iz
+    100014: antebrazo iz.001
+    100016: anular 1 iz
+    100018: anular 1 iz.001
+    100020: anular 1 iz.001_end
+    100022: anular 1 iz.001_end_end
+    100024: anular 1 iz_end
+    100026: anular 1 iz_end_end
+    100028: anular 2 iz
+    100030: anular 2 iz.001
+    100032: anular 3 iz
+    100034: anular 3 iz.001
+    100036: Armature body
+    100038: brazo iz
+    100040: brazo iz.001
+    100042: Circle
+    100044: con de con de punta der
+    100046: con de con de punta iz
+    100048: con de punta der
+    100050: con de punta iz
+    100052: Controller foot.L
+    100054: Controller foot.R
+    100056: Controller hand.L
+    100058: Controller hand.L_end
+    100060: Controller hand.L_end_end
+    100062: Controller hand.R
+    100064: Controller hand.R_end
+    100066: Controller hand.R_end_end
+    100068: Controller index finger.L
+    100070: Controller index finger.L_end
+    100072: Controller index finger.L_end_end
+    100074: Controller index finger.R
+    100076: Controller index finger.R_end
+    100078: Controller index finger.R_end_end
+    100080: Controller middle finger.L
+    100082: Controller middle finger.L_end
+    100084: Controller middle finger.L_end_end
+    100086: Controller middle finger.R
+    100088: Controller middle finger.R_end
+    100090: Controller middle finger.R_end_end
+    100092: Controller Pinkie finger.L
+    100094: Controller Pinkie finger.L_end
+    100096: Controller Pinkie finger.L_end_end
+    100098: Controller Pinkie finger.R
+    100100: Controller Pinkie finger.R_end
+    100102: Controller Pinkie finger.R_end_end
+    100104: Controller ring finger.L
+    100106: Controller ring finger.L_end
+    100108: Controller ring finger.L_end_end
+    100110: Controller ring finger.R
+    100112: Controller ring finger.R_end
+    100114: Controller ring finger.R_end_end
+    100116: Controller stub toe.L
+    100118: Controller stub toe.L_end
+    100120: Controller stub toe.L_end_end
+    100122: Controller stub toe.R
+    100124: Controller stub toe.R_end
+    100126: Controller stub toe.R_end_end
+    100128: cubit.L
+    100130: cubit.L_end
+    100132: cubit.L_end_end
+    100134: cubit.R
+    100136: cubit.R_end
+    100138: cubit.R_end_end
+    100140: dedo corazon 1 iz
+    100142: dedo corazon 1 iz.001
+    100144: dedo corazon 1 iz.001_end
+    100146: dedo corazon 1 iz.001_end_end
+    100148: dedo corazon 1 iz_end
+    100150: dedo corazon 1 iz_end_end
+    100152: dedo corazon 2 iz
+    100154: dedo corazon 2 iz.001
+    100156: dedo corazon 3 iz
+    100158: dedo corazon 3 iz.001
+    100160: head
+    100162: head_end
+    100164: head_end_end
+    100166: hip
+    100168: hueso CON talon der
+    100170: hueso CON talon der_end
+    100172: hueso CON talon der_end_end
+    100174: hueso CON talon iz
+    100176: hueso CON talon iz_end
+    100178: hueso CON talon iz_end_end
+    100180: indice 1 iz
+    100182: indice 1 iz.001
+    100184: indice 1 iz.001_end
+    100186: indice 1 iz.001_end_end
+    100188: indice 1 iz_end
+    100190: indice 1 iz_end_end
+    100192: indice 2 iz
+    100194: indice 2 iz.001
+    100196: indice 3 iz
+    100198: indice 3 iz.001
+    100200: knee.L
+    100202: knee.L_end
+    100204: knee.L_end_end
+    100206: knee.R
+    100208: knee.R_end
+    100210: knee.R_end_end
+    100212: "me\xF1ique 1 iz"
+    100214: "me\xF1ique 1 iz.001"
+    100216: "me\xF1ique 1 iz.001_end"
+    100218: "me\xF1ique 1 iz.001_end_end"
+    100220: "me\xF1ique 1 iz_end"
+    100222: "me\xF1ique 1 iz_end_end"
+    100224: "me\xF1ique 2 iz"
+    100226: "me\xF1ique 2 iz.001"
+    100228: "me\xF1ique 3 iz"
+    100230: "me\xF1ique 3 iz.001"
+    100232: muslo der
+    100234: muslo iz
+    100236: nalga der
+    100238: nalga iz
+    100240: neck
+    100242: palma iz
+    100244: palma iz.001
+    100246: pierna der
+    100248: pierna iz
+    100250: punta der
+    100252: punta der_end
+    100254: punta der_end_end
+    100256: punta iz
+    100258: punta iz_end
+    100260: punta iz_end_end
+    100262: shoulder.L
+    100264: shoulder.R
+    100266: spine
+    100268: talon der
+    100270: talon iz
+    100272: thumb 1.L
+    100274: thumb 1.L_end
+    100276: thumb 1.L_end_end
+    100278: thumb 1.R
+    100280: thumb 1.R_end
+    100282: thumb 1.R_end_end
+    100284: thumb 2.L
+    100286: thumb 2.R
+    100288: thumb 3.L
+    100290: thumb 3.R
+    100292: torso
+    400000: Camera
+    400002: house
+    400004: Lamp
+    400006: Mountains
+    400008: sea
+    400010: //RootNode
+    400012: antebrazo iz
+    400014: antebrazo iz.001
+    400016: anular 1 iz
+    400018: anular 1 iz.001
+    400020: anular 1 iz.001_end
+    400022: anular 1 iz.001_end_end
+    400024: anular 1 iz_end
+    400026: anular 1 iz_end_end
+    400028: anular 2 iz
+    400030: anular 2 iz.001
+    400032: anular 3 iz
+    400034: anular 3 iz.001
+    400036: Armature body
+    400038: brazo iz
+    400040: brazo iz.001
+    400042: Circle
+    400044: con de con de punta der
+    400046: con de con de punta iz
+    400048: con de punta der
+    400050: con de punta iz
+    400052: Controller foot.L
+    400054: Controller foot.R
+    400056: Controller hand.L
+    400058: Controller hand.L_end
+    400060: Controller hand.L_end_end
+    400062: Controller hand.R
+    400064: Controller hand.R_end
+    400066: Controller hand.R_end_end
+    400068: Controller index finger.L
+    400070: Controller index finger.L_end
+    400072: Controller index finger.L_end_end
+    400074: Controller index finger.R
+    400076: Controller index finger.R_end
+    400078: Controller index finger.R_end_end
+    400080: Controller middle finger.L
+    400082: Controller middle finger.L_end
+    400084: Controller middle finger.L_end_end
+    400086: Controller middle finger.R
+    400088: Controller middle finger.R_end
+    400090: Controller middle finger.R_end_end
+    400092: Controller Pinkie finger.L
+    400094: Controller Pinkie finger.L_end
+    400096: Controller Pinkie finger.L_end_end
+    400098: Controller Pinkie finger.R
+    400100: Controller Pinkie finger.R_end
+    400102: Controller Pinkie finger.R_end_end
+    400104: Controller ring finger.L
+    400106: Controller ring finger.L_end
+    400108: Controller ring finger.L_end_end
+    400110: Controller ring finger.R
+    400112: Controller ring finger.R_end
+    400114: Controller ring finger.R_end_end
+    400116: Controller stub toe.L
+    400118: Controller stub toe.L_end
+    400120: Controller stub toe.L_end_end
+    400122: Controller stub toe.R
+    400124: Controller stub toe.R_end
+    400126: Controller stub toe.R_end_end
+    400128: cubit.L
+    400130: cubit.L_end
+    400132: cubit.L_end_end
+    400134: cubit.R
+    400136: cubit.R_end
+    400138: cubit.R_end_end
+    400140: dedo corazon 1 iz
+    400142: dedo corazon 1 iz.001
+    400144: dedo corazon 1 iz.001_end
+    400146: dedo corazon 1 iz.001_end_end
+    400148: dedo corazon 1 iz_end
+    400150: dedo corazon 1 iz_end_end
+    400152: dedo corazon 2 iz
+    400154: dedo corazon 2 iz.001
+    400156: dedo corazon 3 iz
+    400158: dedo corazon 3 iz.001
+    400160: head
+    400162: head_end
+    400164: head_end_end
+    400166: hip
+    400168: hueso CON talon der
+    400170: hueso CON talon der_end
+    400172: hueso CON talon der_end_end
+    400174: hueso CON talon iz
+    400176: hueso CON talon iz_end
+    400178: hueso CON talon iz_end_end
+    400180: indice 1 iz
+    400182: indice 1 iz.001
+    400184: indice 1 iz.001_end
+    400186: indice 1 iz.001_end_end
+    400188: indice 1 iz_end
+    400190: indice 1 iz_end_end
+    400192: indice 2 iz
+    400194: indice 2 iz.001
+    400196: indice 3 iz
+    400198: indice 3 iz.001
+    400200: knee.L
+    400202: knee.L_end
+    400204: knee.L_end_end
+    400206: knee.R
+    400208: knee.R_end
+    400210: knee.R_end_end
+    400212: "me\xF1ique 1 iz"
+    400214: "me\xF1ique 1 iz.001"
+    400216: "me\xF1ique 1 iz.001_end"
+    400218: "me\xF1ique 1 iz.001_end_end"
+    400220: "me\xF1ique 1 iz_end"
+    400222: "me\xF1ique 1 iz_end_end"
+    400224: "me\xF1ique 2 iz"
+    400226: "me\xF1ique 2 iz.001"
+    400228: "me\xF1ique 3 iz"
+    400230: "me\xF1ique 3 iz.001"
+    400232: muslo der
+    400234: muslo iz
+    400236: nalga der
+    400238: nalga iz
+    400240: neck
+    400242: palma iz
+    400244: palma iz.001
+    400246: pierna der
+    400248: pierna iz
+    400250: punta der
+    400252: punta der_end
+    400254: punta der_end_end
+    400256: punta iz
+    400258: punta iz_end
+    400260: punta iz_end_end
+    400262: shoulder.L
+    400264: shoulder.R
+    400266: spine
+    400268: talon der
+    400270: talon iz
+    400272: thumb 1.L
+    400274: thumb 1.L_end
+    400276: thumb 1.L_end_end
+    400278: thumb 1.R
+    400280: thumb 1.R_end
+    400282: thumb 1.R_end_end
+    400284: thumb 2.L
+    400286: thumb 2.R
+    400288: thumb 3.L
+    400290: thumb 3.R
+    400292: torso
+    2300000: house
+    2300002: Mountains
+    2300004: sea
+    2300006: Circle
+    3300000: house
+    3300002: Mountains
+    3300004: sea
+    3300006: Circle
+    4300000: house
+    4300002: sea
+    4300004: Mountains
+    4300006: Circle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
