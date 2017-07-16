@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.0004
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.31790656, g: 0.5653413, b: 0.77205884, a: 1}
+  m_AmbientSkyColor: {r: 0.7389706, g: 0.74497974, b: 0.75, a: 1}
   m_AmbientEquatorColor: {r: 0.9705882, g: 0.9320994, b: 0.80644464, a: 1}
   m_AmbientGroundColor: {r: 0.28676468, g: 0.27903327, b: 0.2635705, a: 1}
   m_AmbientIntensity: 1.07
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: f2ec67c7ed1a04633a5758c5aa217f7c, type: 2}
   m_HaloStrength: 0.5
@@ -38,11 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 646430809}
-  m_IndirectSpecularColor: {r: 0.55698615, g: 0.5910763, b: 0.38314706, a: 1}
+  m_IndirectSpecularColor: {r: 0.55698615, g: 0.5910665, b: 0.38314706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -51,29 +51,30 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 0
+    m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 7
-    m_Resolution: 4
+    serializedVersion: 9
+    m_Resolution: 1.5
     m_BakeResolution: 40
     m_TextureWidth: 1024
     m_TextureHeight: 1024
     m_AO: 1
     m_AOMaxDistance: 2.33
     m_CompAOExponent: 4.77
-    m_CompAOExponentDirect: 3.86
+    m_CompAOExponentDirect: 4.7
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
-    m_LightmapsBakeMode: 1
+    m_LightmapsBakeMode: 0
     m_TextureCompression: 1
     m_FinalGather: 1
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_StationaryBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
     m_PVRFiltering: 0
@@ -86,8 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 50
-  m_ShadowMaskMode: 1
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2125,7 +2125,22 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_CCT: 6500
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &646430810
@@ -3328,10 +3343,10 @@ MonoBehaviour:
   tweakMode: 0
   screenBlendMode: 1
   hdr: 1
-  sepBlurSpread: 2.5
+  sepBlurSpread: 3.1
   quality: 1
-  bloomIntensity: 0.34
-  bloomThreshold: 0.5
+  bloomIntensity: -0.09
+  bloomThreshold: 0.69
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
   hollywoodFlareBlurIterations: 2
@@ -3364,11 +3379,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  intensity: 0.05
+  intensity: 0
   chromaticAberration: 0.2
   axialAberration: 0.5
-  blur: 0.13
-  blurSpread: 0.75
+  blur: 0.18
+  blurSpread: 0.15
   luminanceDependency: 0.25
   blurDistance: 2.5
   vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
@@ -4648,12 +4663,11 @@ PlayableDirector:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594330258}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 5e2fc94ce71d94319b5982c42f606df0, type: 2}
   m_InitialState: 1
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
-  m_SceneReferences: []
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 114694687047308188, guid: 5e2fc94ce71d94319b5982c42f606df0, type: 2}
@@ -4972,12 +4986,11 @@ PlayableDirector:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1786624967}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 554468b951e864730be32e783919c97d, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
-  m_SceneReferences: []
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 114457351585998920, guid: 554468b951e864730be32e783919c97d, type: 2}
