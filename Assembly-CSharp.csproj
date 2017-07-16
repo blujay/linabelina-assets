@@ -56,6 +56,8 @@
      <Compile Include="Assets\Scripts\Egg.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
      <Compile Include="Assets\Scripts\IKControl.cs" />
+     <Compile Include="Assets\Scripts\playEggBounceAudio.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonFootsteps.cs" />
      <Compile Include="Assets\Sketchfab Exporter\ExporterSKFB.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_Accessor.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_AmbientLight.cs" />
@@ -100,7 +102,6 @@
      <Compile Include="Assets\Sketchfab Exporter\Preset.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SceneToGlTFWiz.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SimpleJSON.cs" />
-     <Compile Include="Assets\ThirdPersonFootsteps.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
