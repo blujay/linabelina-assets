@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -145,67 +145,67 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TreeEditor">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.HoloLens">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.VR">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Sequence">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/UnitySequence/UnityEngine.Sequence.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/UnitySequence/UnityEngine.Sequence.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Sequence">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/UnitySequence/Editor/UnityEditor.Sequence.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/UnityExtensions/UnitySequence/Editor/UnityEditor.Sequence.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WebGL.Extensions">
- <HintPath>/Applications/Unity/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ <HintPath>/Applications/Unity 5.6-beta/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
  <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
