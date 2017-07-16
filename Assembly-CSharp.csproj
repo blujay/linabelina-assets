@@ -100,6 +100,7 @@
      <Compile Include="Assets\Sketchfab Exporter\Preset.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SceneToGlTFWiz.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SimpleJSON.cs" />
+     <Compile Include="Assets\ThirdPersonFootsteps.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
