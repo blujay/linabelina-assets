@@ -394,7 +394,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557906662071072}
-  m_LocalRotation: {x: -0.01826992, y: -0.67536134, z: 0.7372428, w: 0.0051281005}
+  m_LocalRotation: {x: -0.018269923, y: -0.6753614, z: 0.7372429, w: 0.005128101}
   m_LocalPosition: {x: -0.0038408828, y: -0.002926103, z: -0.004590218}
   m_LocalScale: {x: 1, y: 1.0000004, z: 1}
   m_Children:
@@ -563,9 +563,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806756002988686}
-  m_LocalRotation: {x: 0.3454755, y: -0.49831048, z: 0.021803455, w: -0.794895}
-  m_LocalPosition: {x: 179.88, y: 505.75, z: 722.78}
-  m_LocalScale: {x: 0.8334754, y: 1.1207117, z: 0.83347535}
+  m_LocalRotation: {x: 0.33634737, y: -0.5000682, z: 0.021880344, w: -0.797699}
+  m_LocalPosition: {x: 187.17, y: 503.68, z: 717.76}
+  m_LocalScale: {x: 1.1763284, y: 1.1763277, z: 1.1763284}
   m_Children:
   - {fileID: 4292823103040896}
   m_Father: {fileID: 0}
@@ -778,7 +778,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: be0a5f9d0ae014d91aa3642cd867b232, type: 2}
+  - {fileID: 2100000, guid: 24935378338a74e0ab65c1c25ac2359a, type: 2}
   - {fileID: 2100000, guid: f204e7dd18a974002b3e097f6a37c176, type: 2}
   - {fileID: 2100000, guid: 8f813eb4e32c74bc39ea30d26195cf65, type: 2}
   - {fileID: 2100000, guid: d836817f750d4489599b7688c9acebbb, type: 2}
