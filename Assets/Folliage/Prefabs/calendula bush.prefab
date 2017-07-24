@@ -257,7 +257,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4166810533615266}
-  - component: {fileID: 135329307383517708}
   m_Layer: 0
   m_Name: calendula bush
   m_TagString: Untagged
@@ -297,9 +296,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792015755268644}
-  m_LocalRotation: {x: -0.37042585, y: -0.87691903, z: -0.23230502, w: 0.19957983}
-  m_LocalPosition: {x: 5.5910006, y: -16.13, z: -2.3062744}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.5292368, y: 0.58182716, z: -0.3334962, w: -0.5197748}
+  m_LocalPosition: {x: 206.08, y: 523.74, z: 725.79}
+  m_LocalScale: {x: 1.6549966, y: 1.6549958, z: 1.6549966}
   m_Children:
   - {fileID: 4745386237790694}
   - {fileID: 4201226687060784}
@@ -317,7 +316,7 @@ Transform:
   - {fileID: 4368785026420442}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.328, y: 256.089, z: 77.274}
 --- !u!4 &4201226687060784
 Transform:
   m_ObjectHideFlags: 1
@@ -1048,15 +1047,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077024013300622}
   m_Mesh: {fileID: 4300000, guid: 3034365c3b22e4ccca0772ec0fae01fc, type: 3}
---- !u!135 &135329307383517708
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1792015755268644}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5909503
-  m_Center: {x: 0.7666492, y: 0.7044029, z: 0.23380934}
