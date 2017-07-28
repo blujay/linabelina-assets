@@ -52,12 +52,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\animations\hopping-tree\scripts\treeBend.cs" />
-     <Compile Include="Assets\EggScript.cs" />
      <Compile Include="Assets\pickupObject.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\Scripts\EasyFadeIn.cs" />
      <Compile Include="Assets\Scripts\Egg.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
+     <Compile Include="Assets\Scripts\EggScript.cs" />
      <Compile Include="Assets\Scripts\IKControl.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnCollision.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnTrigger.cs" />
@@ -107,6 +107,7 @@
      <Compile Include="Assets\Sketchfab Exporter\Preset.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SceneToGlTFWiz.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SimpleJSON.cs" />
+     <Compile Include="Assets\Throw.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -214,10 +215,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zip">
- <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
+ <HintPath>/Users/merlincita/GitHub/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/Ionic.Zip.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>/Users/jay/Documents/Art/Projects/linabelina/repos/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/System.Drawing.dll</HintPath>
+ <HintPath>/Users/merlincita/GitHub/linabelina-assets/Assets/Sketchfab Exporter/Dependancies/System.Drawing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
