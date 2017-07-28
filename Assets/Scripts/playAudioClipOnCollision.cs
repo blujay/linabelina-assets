@@ -5,7 +5,8 @@ using UnityEngine;
 public class playAudioClipOnCollision : MonoBehaviour {
 
 	public AudioClip[] ClipToPlay;
-	public string[] GameTag;
+	public string GameTag;
+	bool played = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +16,19 @@ public class playAudioClipOnCollision : MonoBehaviour {
 
 	void playSound(){
 		GetComponent<AudioSource>().clip = ClipToPlay [Random.Range (0, ClipToPlay.Length)];
-		GetComponent<AudioSource> ().Play();
+		if (!played) {
+			GetComponent<AudioSource> ().Play ();
+			played = true;
+		} else {
+			played = false;
+		}
+
 	}
 
-	void OnCollisionEnter(Collision collision) {
-		foreach(var tag in GameTag){
+	void OnCollisionEnter(Collision other) {
+		if (other.gameObject.tag == GameTag) {
 			playSound();
-			Debug.Log ("played collision sound");
-
+			Debug.Log ("collided with " + GameTag);
 		}
 	}
 

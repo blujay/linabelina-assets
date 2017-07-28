@@ -52,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\animations\hopping-tree\scripts\treeBend.cs" />
+     <Compile Include="Assets\EggScript.cs" />
+     <Compile Include="Assets\pickupObject.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />
+     <Compile Include="Assets\Scripts\EasyFadeIn.cs" />
      <Compile Include="Assets\Scripts\Egg.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
      <Compile Include="Assets\Scripts\IKControl.cs" />
@@ -109,6 +112,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Standard Assets\Cinemachine\license.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />

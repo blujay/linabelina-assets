@@ -53,6 +53,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -97,6 +98,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -946,7 +948,7 @@ MonoBehaviour:
     parentGroupID: 9
     childGroupIDs: 
     geometryMode: 1
-    materialLeaf: {fileID: 2100000, guid: 6e9913cce6d0e4f8a81aa80f4a8f860b, type: 2}
+    materialLeaf: {fileID: 2100000, guid: eb94a79fa63a44ae9b756c51174b75a0, type: 2}
     instanceMesh: {fileID: 0}
     size: {x: 0.93391305, y: 1.0991304}
     perpendicularAlign: 0

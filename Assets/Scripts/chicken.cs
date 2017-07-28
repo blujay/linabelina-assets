@@ -23,7 +23,6 @@ public class chicken : MonoBehaviour {
 	float timeToNextStateChange = 0;
 	Vector3 goalPosition;
 	private const float MAX_VELOCITY = 2;
-	private float overallDistance;
 
 	// Use this for initialization
 	void Start () {
@@ -53,7 +52,7 @@ public class chicken : MonoBehaviour {
 					currentState = ChickenAnimationState.WALKING;
 					chickenAnimator.SetBool("walking", true);
 					goalPosition = new Vector3(transform.localPosition.x + Random.Range(-10.5f, 10.5f), transform.localPosition.y, transform.localPosition.z + Random.Range(-10.5f, 10.5f));
-					overallDistance = Vector3.Distance(transform.localPosition, goalPosition);
+			
 
 					//this is just a visualisation of the point the chicken is aiming for. It should only be uncommented when debugging
 					GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);

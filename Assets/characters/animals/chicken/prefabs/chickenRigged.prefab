@@ -157,10 +157,9 @@ GameObject:
   - component: {fileID: 4292823103040896}
   - component: {fileID: 95284471818315058}
   - component: {fileID: 54259357615205500}
-  - component: {fileID: 136012967958336390}
   - component: {fileID: 136691434287501100}
   - component: {fileID: 82999467545350592}
-  - component: {fileID: 114247764625275232}
+  - component: {fileID: 114337262370246302}
   m_Layer: 0
   m_Name: chicken-rigged
   m_TagString: Untagged
@@ -563,8 +562,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806756002988686}
-  m_LocalRotation: {x: 0.33634737, y: -0.5000682, z: 0.021880344, w: -0.797699}
-  m_LocalPosition: {x: 187.17, y: 503.68, z: 717.76}
+  m_LocalRotation: {x: 0.018812127, y: 0.7991787, z: -0.34565127, w: -0.49141103}
+  m_LocalPosition: {x: 185.33, y: 505.03, z: 719.07}
   m_LocalScale: {x: 1.1763284, y: 1.1763277, z: 1.1763284}
   m_Children:
   - {fileID: 4292823103040896}
@@ -630,10 +629,10 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 171
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 10
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -710,7 +709,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114247764625275232
+--- !u!114 &114337262370246302
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -718,13 +717,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1435205042844786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd7f199ac8c04ffb9acdc7e621d399b, type: 3}
+  m_Script: {fileID: 11500000, guid: db396a3b4d9df465dbe211e9157c9f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlay:
   - {fileID: 8300000, guid: b262ea1da2628465eaa8ee6663160024, type: 3}
   - {fileID: 8300000, guid: 25c8cb9252efc4956b5b73d5455ee8ef, type: 3}
   - {fileID: 8300000, guid: ec4362bd9c5b146e88bb22794c027229, type: 3}
+  GameTag: Player
 --- !u!114 &114822842275350250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -739,19 +739,6 @@ MonoBehaviour:
   MinIdleTime: 0.5
   MaxIdleTime: 1.5
   MaxRotationSpeed: 10
---- !u!136 &136012967958336390
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1435205042844786}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.7582148
-  m_Height: 2.6151757
-  m_Direction: 1
-  m_Center: {x: 0.051232606, y: 1.1081825, z: 0.019254975}
 --- !u!136 &136691434287501100
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -761,10 +748,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: e52fb17f9b1e7fd48b8955f1391d3688, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.9239673
-  m_Height: 2.6264334
+  m_Radius: 1.4984517
+  m_Height: 3.1877413
   m_Direction: 1
-  m_Center: {x: -0.09914302, y: 1.3236225, z: -0.11672745}
+  m_Center: {x: -0.09914351, y: 1.3236214, z: -0.18110426}
 --- !u!137 &137141971270126376
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
