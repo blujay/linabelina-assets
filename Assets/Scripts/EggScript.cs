@@ -12,19 +12,20 @@ public class EggScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		transform.parent = parentBone.transform;
-		rigid.useGravity = false;
+		transform.localPosition = Vector3.zero;
+		GetComponent<Rigidbody> ().useGravity = false;
+		GetComponent<MeshCollider> ().enabled = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	public void ReleaseMe () {
 		transform.parent = null;
-		rigid.useGravity = true;
-		//transform.rotation = parentBone.transform.rotation;
-		//rigid.AddForce (transform.forward * 20000);
+		GetComponent<Rigidbody> ().useGravity = true;
+		GetComponent<MeshCollider> ().enabled = true;
 
 	}
 }
