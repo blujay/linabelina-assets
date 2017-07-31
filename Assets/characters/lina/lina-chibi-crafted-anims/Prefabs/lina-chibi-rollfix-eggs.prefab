@@ -1352,7 +1352,7 @@ GameObject:
   - component: {fileID: 95926863957522636}
   - component: {fileID: 114728951934577028}
   m_Layer: 0
-  m_Name: lina-chibi-rollfix
+  m_Name: lina-chibi-rollfix-eggs
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,11 +5,11 @@ using UnityEngine;
 public class Throw : MonoBehaviour {
 
 	public GameObject theObject;
+	private GameObject newObject;
 	private EggScript objectScript;
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -17,8 +17,14 @@ public class Throw : MonoBehaviour {
 		
 	}
 
+	void CloneObject(){
+		Debug.Log("Cloning");
+		theObject.GetComponent <EggScript> ().CloneMe();
+	}
+
 	void ThrowObject () {
 		Debug.Log("Throwiiing");
-		theObject.GetComponent <EggScript> ().ReleaseMe();
+		newObject = GameObject.Find ("Current Clone");
+		newObject.GetComponent <EggScript> ().ReleaseMe();
 	}
 }

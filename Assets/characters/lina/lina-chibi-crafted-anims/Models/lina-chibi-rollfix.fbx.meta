@@ -260,9 +260,43 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'talon iz' :
+      rotation error = 6.534531 deg\n\t'talon der' : rotation error = 6.537180 deg\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Armature body|idle' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'talon iz' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'talon der' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Armature body|reach-down for egg' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'torso' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'talon iz' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'talon der' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Armature body|reach-out for egg' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'torso' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\t'talon iz' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'talon der' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\nClip 'Armature
+      body|reach-up for egg' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'talon
+      iz' is inbetween humanoid transforms and has rotation animation that will be
+      discarded.\n\t'talon der' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Armature body|sit-down' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'torso' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'talon iz'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'talon
+      der' is inbetween humanoid transforms and has rotation animation that will be
+      discarded.\n\nClip 'Armature body|walking' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'torso' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'talon iz' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'talon der'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3

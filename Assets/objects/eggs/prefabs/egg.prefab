@@ -9,46 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1294778962463038}
+  m_RootGameObject: {fileID: 1049972052534684}
   m_IsPrefabParent: 1
---- !u!1 &1294778962463038
+--- !u!1 &1049972052534684
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4805863084876654}
-  - component: {fileID: 33678771231634676}
-  - component: {fileID: 23101242186744630}
-  - component: {fileID: 54680419493804580}
-  - component: {fileID: 64072481623885118}
+  - component: {fileID: 4007001192081444}
+  - component: {fileID: 33069109482269216}
+  - component: {fileID: 23653869253057802}
+  - component: {fileID: 54995489410741706}
+  - component: {fileID: 64108168519633238}
+  - component: {fileID: 114371836461578564}
   m_Layer: 0
-  m_Name: egg-chicken
+  m_Name: egg
   m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4805863084876654
+--- !u!4 &4007001192081444
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294778962463038}
-  m_LocalRotation: {x: -0.8493625, y: -0, z: -0, w: 0.52781}
-  m_LocalPosition: {x: -576.79, y: 946, z: -903.9}
-  m_LocalScale: {x: 60.54412, y: 60.54412, z: 60.54412}
+  m_GameObject: {fileID: 1049972052534684}
+  m_LocalRotation: {x: -0.78148586, y: -0.16854288, z: -0.015928272, w: -0.600516}
+  m_LocalPosition: {x: 0.07495529, y: 1.85, z: 1.2014737}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -116.284996, y: 0, z: 0}
---- !u!23 &23101242186744630
+--- !u!23 &23653869253057802
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294778962463038}
+  m_GameObject: {fileID: 1049972052534684}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -75,34 +76,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33678771231634676
+--- !u!33 &33069109482269216
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294778962463038}
+  m_GameObject: {fileID: 1049972052534684}
   m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
---- !u!54 &54680419493804580
+--- !u!54 &54995489410741706
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294778962463038}
+  m_GameObject: {fileID: 1049972052534684}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.4
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64072481623885118
+--- !u!64 &64108168519633238
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294778962463038}
+  m_GameObject: {fileID: 1049972052534684}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -111,3 +112,15 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
+--- !u!114 &114371836461578564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049972052534684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b854544d534440293355f858ecdad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EggPrefab: {fileID: 1049972052534684}

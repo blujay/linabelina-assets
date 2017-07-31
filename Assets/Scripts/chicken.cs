@@ -55,8 +55,8 @@ public class chicken : MonoBehaviour {
 			
 
 					//this is just a visualisation of the point the chicken is aiming for. It should only be uncommented when debugging
-					GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-					goal.transform.position = new Vector3(goalPosition.x, goalPosition.y + 2, goalPosition.z);
+					//GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+					//goal.transform.position = new Vector3(goalPosition.x, goalPosition.y + 2, goalPosition.z);
 					break;
 			}
 		}
