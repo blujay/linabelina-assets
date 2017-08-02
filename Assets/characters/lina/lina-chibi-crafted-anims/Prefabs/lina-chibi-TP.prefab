@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 95085445775699286}
   - component: {fileID: 114396644461762194}
   - component: {fileID: 114097949033668920}
+  - component: {fileID: 114401298674276274}
   m_Layer: 0
   m_Name: lina-chibi-TP
   m_TagString: Player
@@ -2483,7 +2484,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170399104071728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -594.86926, y: 951.54114, z: -877.04987}
+  m_LocalPosition: {x: -575.0552, y: 945.1147, z: -897.2564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4607786438264590}
@@ -2763,6 +2764,23 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 0.8
   m_AnimSpeedMultiplier: 0.9
   m_GroundCheckDistance: 3.6
+--- !u!114 &114401298674276274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1170399104071728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba65fb5d96fcb42d0a3398d493cec382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Footsteps:
+  - {fileID: 8300000, guid: 52ed2c6c9f8e0415ea4435d6855674f7, type: 3}
+  - {fileID: 8300000, guid: f9c3ed7ae118b42a1ba84172b46c5340, type: 3}
+  - {fileID: 8300000, guid: 47c9e0f79e19f464d94bd25eed5a995f, type: 3}
+  - {fileID: 8300000, guid: c860d3d31bbfe4358987b26e5c0b3d43, type: 3}
+  - {fileID: 8300000, guid: e82465e0917434443a98e5c036567ea3, type: 3}
 --- !u!114 &114913814352679906
 MonoBehaviour:
   m_ObjectHideFlags: 1
