@@ -7,6 +7,8 @@ TagManager:
   - Egg
   - Lina
   - Terrain
+  - Chicken
+  - collectable
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - bodies
+  - arms
   - 
   - 
   - 

@@ -238,6 +238,8 @@ ModelImporter:
     4300000: location chibi
     4300002: pelo
     4300004: cuerpo
+    6400000: location chibi
+    6400002: pelo
     7400000: Armature body|idle
     7400002: Armature body|peloAction
     7400004: "Armature body|posici\xF3n rest"
@@ -307,8 +309,90 @@ ModelImporter:
       has rotation animation that will be discarded.\n\t'talon iz' is inbetween humanoid
       transforms and has rotation animation that will be discarded.\n\t'talon der'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Armature
+      body|idle':\n\tLeftLowerArm average position error 3.9 mm and maximum position
+      error 3.9 mm at time 1: 5 (22.3%) Frame 29\n\tRightLowerArm average position
+      error 3.9 mm and maximum position error 3.9 mm at time 0:18 (13.8%) Frame 18\n\nRetargeting
+      quality report for clip 'Armature body|posici\xF3n rest':\n\tLeftLowerArm average
+      position error 3.9 mm and maximum position error 3.9 mm at time 0: 0 (0.0%)
+      Frame 0\n\tRightLowerArm average position error 3.9 mm and maximum position
+      error 3.9 mm at time 0: 0 (0.0%) Frame 0\n\nRetargeting quality report for clip
+      'Armature body|reach-down for egg':\n\tLeftUpperArm average position error 63.8
+      mm and maximum position error 178.9 mm at time 1:18 (41.6%) Frame 42\n\tLeftLowerArm
+      average position error 48.0 mm and maximum position error 165.5 mm at time 0:23
+      (22.8%) Frame 23\n\tLeftHand average position error 38.5 mm and maximum position
+      error 176.0 mm at time 1: 0 (23.8%) Frame 24\n\tRightUpperArm average position
+      error 63.8 mm and maximum position error 178.9 mm at time 1:18 (41.6%) Frame
+      42\n\tRightLowerArm average position error 57.4 mm and maximum position error
+      176.3 mm at time 1: 6 (29.7%) Frame 30\n\tRightHand average position error 56.4
+      mm and maximum position error 176.4 mm at time 1: 7 (30.7%) Frame 31\n\tHead
+      average position error 63.8 mm and maximum position error 178.9 mm at time 1:18
+      (41.6%) Frame 42\n\tLeftFoot average orientation error 6.1 deg and maximum orientation
+      error 44.5 deg at time 1:15 (38.6%) Frame 39\n\tRightFoot average orientation
+      error 25.1 deg and maximum orientation error 154.0 deg at time 1: 8 (31.7%)
+      Frame 32\n\nRetargeting quality report for clip 'Armature body|reach-out for
+      egg':\n\tLeftUpperArm average position error 23.5 mm and maximum position error
+      37.9 mm at time 1:14 (43.7%) Frame 38\n\tLeftLowerArm average position error
+      14.1 mm and maximum position error 20.4 mm at time 1: 7 (35.6%) Frame 31\n\tLeftHand
+      average position error 3.4 mm and maximum position error 5.6 mm at time 1: 5
+      (33.3%) Frame 29\n\tRightUpperArm average position error 23.5 mm and maximum
+      position error 37.9 mm at time 1:14 (43.7%) Frame 38\n\tRightLowerArm average
+      position error 18.3 mm and maximum position error 32.6 mm at time 1:14 (43.7%)
+      Frame 38\n\tRightHand average position error 13.0 mm and maximum position error
+      31.4 mm at time 1:14 (43.7%) Frame 38\n\tHead average position error 23.5 mm
+      and maximum position error 37.9 mm at time 1:14 (43.7%) Frame 38\n\nRetargeting
+      quality report for clip 'Armature body|reach-up for egg':\n\tLeftUpperArm average
+      position error 10.2 mm and maximum position error 31.6 mm at time 1: 1 (27.8%)
+      Frame 25\n\tLeftLowerArm average position error 6.4 mm and maximum position
+      error 16.8 mm at time 1: 3 (30.0%) Frame 27\n\tLeftHand average position error
+      2.2 mm and maximum position error 9.4 mm at time 1: 4 (31.1%) Frame 28\n\tRightUpperArm
+      average position error 10.2 mm and maximum position error 31.6 mm at time 1:
+      1 (27.8%) Frame 25\n\tRightLowerArm average position error 8.8 mm and maximum
+      position error 25.3 mm at time 1: 4 (31.1%) Frame 28\n\tRightHand average position
+      error 6.7 mm and maximum position error 23.1 mm at time 1: 3 (30.0%) Frame 27\n\tHead
+      average position error 10.2 mm and maximum position error 31.6 mm at time 1:
+      1 (27.8%) Frame 25\n\nRetargeting quality report for clip 'Armature body|sit-down':\n\tLeftLowerLeg
+      average position error 11.6 mm and maximum position error 57.8 mm at time 4:
+      2 (36.7%) Frame 98\n\tLeftFoot average position error 10.8 mm and maximum position
+      error 59.9 mm at time 4: 2 (36.7%) Frame 98\n\tRightLowerLeg average position
+      error 5.2 mm and maximum position error 40.2 mm at time 9:23 (89.5%) Frame 239\n\tRightFoot
+      average position error 4.0 mm and maximum position error 41.3 mm at time 9:23
+      (89.5%) Frame 239\n\tLeftUpperArm average position error 52.1 mm and maximum
+      position error 64.3 mm at time 10:10 (93.6%) Frame 250\n\tLeftLowerArm average
+      position error 33.2 mm and maximum position error 43.2 mm at time 10: 6 (92.1%)
+      Frame 246\n\tLeftHand average position error 10.0 mm and maximum position error
+      43.5 mm at time 10: 8 (92.9%) Frame 248\n\tRightUpperArm average position error
+      52.1 mm and maximum position error 64.3 mm at time 10:10 (93.6%) Frame 250\n\tRightLowerArm
+      average position error 31.1 mm and maximum position error 51.8 mm at time 10:
+      6 (92.1%) Frame 246\n\tRightHand average position error 9.1 mm and maximum position
+      error 47.7 mm at time 10: 8 (92.9%) Frame 248\n\tHead average position error
+      52.1 mm and maximum position error 64.3 mm at time 10:10 (93.6%) Frame 250\n\tLeftFoot
+      average orientation error 22.2 deg and maximum orientation error 123.3 deg at
+      time 10: 6 (92.1%) Frame 246\n\tRightFoot average orientation error 27.9 deg
+      and maximum orientation error 58.3 deg at time 10: 7 (92.5%) Frame 247\n\nRetargeting
+      quality report for clip 'Armature body|take egg out of pocket':\n\tLeftUpperArm
+      average position error 46.8 mm and maximum position error 100.3 mm at time 2:13
+      (57.0%) Frame 61\n\tLeftLowerArm average position error 27.5 mm and maximum
+      position error 58.9 mm at time 2:13 (57.0%) Frame 61\n\tLeftHand average position
+      error 9.5 mm and maximum position error 24.6 mm at time 2:13 (57.0%) Frame 61\n\tRightUpperArm
+      average position error 46.8 mm and maximum position error 100.3 mm at time 2:13
+      (57.0%) Frame 61\n\tRightLowerArm average position error 41.4 mm and maximum
+      position error 94.6 mm at time 2: 6 (50.5%) Frame 54\n\tRightHand average position
+      error 33.7 mm and maximum position error 91.2 mm at time 2:12 (56.1%) Frame
+      60\n\tHead average position error 46.8 mm and maximum position error 100.3 mm
+      at time 2:13 (57.0%) Frame 61\n\nRetargeting quality report for clip 'Armature
+      body|walking':\n\tLeftLowerArm average position error 0.3 mm and maximum position
+      error 1.2 mm at time 3: 3 (17.9%) Frame 75\n\tRightLowerArm average position
+      error 0.3 mm and maximum position error 1.2 mm at time 0:15 (3.6%) Frame 15\n\nRetargeting
+      quality report for clip 'Armature body|waving-hello':\n\tLeftLowerArm average
+      position error 0.9 mm and maximum position error 3.9 mm at time 0: 1 (1.2%)
+      Frame 1\n\tRightLowerArm average position error 3.9 mm and maximum position
+      error 3.9 mm at time 1: 0 (29.3%) Frame 24\n\nRetargeting quality report for
+      clip 'pelo|reach-down for egg':\n\tLeftLowerArm average position error 3.9 mm
+      and maximum position error 3.9 mm at time 0: 0 (0.0%) Frame 0\n\tRightLowerArm
+      average position error 3.9 mm and maximum position error 3.9 mm at time 0: 0
+      (0.0%) Frame 0\n"
+    animationDoRetargetingWarnings: 1
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -328,8 +412,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -412,8 +496,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -488,8 +572,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature body|take egg out of pocket
       takeName: Armature body|take egg out of pocket
-      firstFrame: 14
-      lastFrame: 73
+      firstFrame: 0
+      lastFrame: 107
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -509,14 +593,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.19727892
+      - time: 0.18840627
         functionName: CloneObject
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.61815256
+      - time: 0.5390959
         functionName: ThrowObject
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -559,30 +643,30 @@ ModelImporter:
       name: Armature body|waving-hello
       takeName: Armature body|waving-hello
       firstFrame: 0
-      lastFrame: 82
+      lastFrame: 81
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
       transformMask: []
       maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      maskSource: {fileID: 31900000, guid: 31269157edc584ff0aa518514cb19a55, type: 2}
+      additiveReferencePoseFrame: 1.98
     - serializedVersion: 16
       name: pelo|reach-down for egg
       takeName: pelo|reach-down for egg
@@ -616,7 +700,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
