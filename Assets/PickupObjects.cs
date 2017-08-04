@@ -16,13 +16,13 @@ public class PickupObjects : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.R)) {
-			print("mouse pressed");
+			//print("mouse pressed");
 			animator.SetBool ("reaching", true);
 		} else{
 			animator.SetBool("reaching",false);
 		}
 		if (Input.GetKey(KeyCode.S)) {
-			print("S pressed");
+			//print("S pressed");
 			animator.SetBool ("waving", true);
 		} else{
 			animator.SetBool("waving",false);
@@ -30,12 +30,9 @@ public class PickupObjects : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter(Collision col) {
-		if(col.transform.tag == "collectable")
-		{
-			Debug.Log ("collided with " + col.gameObject.name);
-			//animator.SetTrigger("collect");
-		}
+	void onCollisionEnter(Collision col){
+		Debug.Log ("collided");
 	}
 		
 }
+	

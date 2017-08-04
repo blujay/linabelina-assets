@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\animations\hopping-tree\scripts\treeBend.cs" />
+     <Compile Include="Assets\HandHold.cs" />
      <Compile Include="Assets\pickupObject.cs" />
      <Compile Include="Assets\PickupObjects.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />

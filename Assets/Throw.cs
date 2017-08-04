@@ -18,12 +18,12 @@ public class Throw : MonoBehaviour {
 	}
 
 	void CloneObject(){
-		Debug.Log("Cloning");
+		//Debug.Log("Cloning");
 		theObject.GetComponent <EggScript> ().CloneMe();
 	}
 
 	void ThrowObject () {
-		Debug.Log("Throwiiing");
+		//Debug.Log("Throwiiing");
 		newObject = GameObject.Find ("Current Clone");
 		newObject.GetComponent <EggScript> ().ReleaseMe();
 	}
