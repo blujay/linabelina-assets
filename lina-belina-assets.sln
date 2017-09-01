@@ -1,11 +1,10 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lina-belina-assets", "Assembly-CSharp-firstpass.csproj", "{B1B9B72D-0C65-2010-E83B-14DD466D198B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{B1B9B72D-0C65-2010-E83B-14DD466D198B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lina-belina-assets", "Assembly-CSharp.csproj", "{58DE2866-02F8-D284-905E-664410C2C971}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{58DE2866-02F8-D284-905E-664410C2C971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lina-belina-assets", "Assembly-CSharp-Editor-firstpass.csproj", "{894F3FC9-31CE-C809-6BE3-43CE01711C7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{894F3FC9-31CE-C809-6BE3-43CE01711C7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

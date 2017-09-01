@@ -7,12 +7,12 @@ public class EggScript : MonoBehaviour {
 
 	public GameObject EggPrefab;
 	private GameObject parentBone;
-
+	private Color initialColor;
 
 
 	// Use this for initialization
 	void Start () {
-		
+		initialColor = gameObject.GetComponent<Renderer>().material.color;
 	}
 
 	// Update is called once per frame
@@ -37,5 +37,15 @@ public class EggScript : MonoBehaviour {
 		transform.parent = null;
 		this.name = "Egg";
 
+	}
+
+	public void HighlightOn()
+	{
+		gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+	}
+	
+	public void HighlightOff()
+	{
+		gameObject.GetComponent<Renderer>().material.color = initialColor;
 	}
 }
