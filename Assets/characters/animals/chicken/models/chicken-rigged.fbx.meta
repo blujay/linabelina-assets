@@ -1,65 +1,58 @@
 fileFormatVersion: 2
 guid: 18bb41e7ff50c4cd2a7e781597bb68b0
-timeCreated: 1495098532
+timeCreated: 1504535532
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Armature
-    100002: bone
-    100004: bone_end
-    100006: Chicken
-    100008: //RootNode
-    100010: head
-    100012: left-foot
-    100014: left-foot_end
-    100016: left-shin
-    100018: left-thigh
-    100020: left-thigh.001
-    100022: right-foot
-    100024: right-foot_end
-    100026: right-shin
-    100028: right-thigh
-    100030: right-thigh.001
-    100032: spine
-    100034: tail
-    100036: tail_end
-    100038: chicken-rig
-    400000: Armature
-    400002: bone
-    400004: bone_end
-    400006: Chicken
-    400008: //RootNode
-    400010: head
-    400012: left-foot
-    400014: left-foot_end
-    400016: left-shin
-    400018: left-thigh
-    400020: left-thigh.001
-    400022: right-foot
-    400024: right-foot_end
-    400026: right-shin
-    400028: right-thigh
-    400030: right-thigh.001
-    400032: spine
-    400034: tail
-    400036: tail_end
-    400038: chicken-rig
+    100000: Chicken
+    100002: chicken-rig
+    100004: //RootNode
+    100006: head
+    100008: head_end
+    100010: left-foot
+    100012: left-foot_end
+    100014: left-shin
+    100016: left-thigh
+    100018: left-thigh.001
+    100020: neck
+    100022: neck_end
+    100024: right-foot
+    100026: right-foot_end
+    100028: right-shin
+    100030: right-thigh
+    100032: right-thigh.001
+    100034: root
+    100036: spine
+    100038: tail
+    400000: Chicken
+    400002: chicken-rig
+    400004: //RootNode
+    400006: head
+    400008: head_end
+    400010: left-foot
+    400012: left-foot_end
+    400014: left-shin
+    400016: left-thigh
+    400018: left-thigh.001
+    400020: neck
+    400022: neck_end
+    400024: right-foot
+    400026: right-foot_end
+    400028: right-shin
+    400030: right-thigh
+    400032: right-thigh.001
+    400034: root
+    400036: spine
+    400038: tail
     4300000: Chicken
-    7400000: Armature|idle
-    7400002: Armature|PoseLib
-    7400004: Armature|rest
-    7400006: Armature|walking
-    7400008: Armature|pecking
-    7400010: chicken-rig|idle
-    7400012: chicken-rig|pecking
-    7400014: chicken-rig|PoseLib
-    7400016: chicken-rig|rest
-    7400018: chicken-rig|sitting
-    7400020: chicken-rig|walking
-    7400022: chicken-rig|standing-up
-    7400024: chicken-rig|sitting-down
-    7400026: chicken-rig|sitting-idle
+    7400000: chicken-rig|ChickenAction
+    7400002: chicken-rig|idle
+    7400004: chicken-rig|pecking
+    7400006: chicken-rig|PoseLib
+    7400008: chicken-rig|rest
+    7400010: chicken-rig|sitting-down
+    7400012: chicken-rig|walking
     9500000: //RootNode
     13700000: Chicken
   materials:
@@ -71,7 +64,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: chicken-rig/root
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -86,6 +79,34 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
+    - serializedVersion: 16
+      name: chicken-rig|ChickenAction
+      takeName: chicken-rig|ChickenAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: chicken-rig|idle
       takeName: chicken-rig|idle
@@ -110,51 +131,125 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
+      transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: chicken-rig|pecking
       takeName: chicken-rig|pecking
+      firstFrame: 10
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chicken-rig|PoseLib
+      takeName: chicken-rig|PoseLib
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chicken-rig|rest
+      takeName: chicken-rig|rest
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chicken-rig|sitting-down
+      takeName: chicken-rig|sitting-down
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chicken-rig|walking
+      takeName: chicken-rig|walking
       firstFrame: 0
       lastFrame: 21
       wrapMode: 0
@@ -176,454 +271,20 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|PoseLib
-      takeName: chicken-rig|PoseLib
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|rest
-      takeName: chicken-rig|rest
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|sitting-down
-      takeName: chicken-rig|sitting-down
-      firstFrame: 0
-      lastFrame: 28
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|sitting-idle
-      takeName: chicken-rig|sitting-idle
-      firstFrame: 0
-      lastFrame: 20
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|standing-up
-      takeName: chicken-rig|standing-up
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: chicken-rig|walking
-      takeName: chicken-rig|walking
-      firstFrame: 0
-      lastFrame: 27
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Chicken
-        weight: 1
-      - path: chicken-rig
-        weight: 1
-      - path: chicken-rig/left-thigh
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot
-        weight: 1
-      - path: chicken-rig/left-thigh/left-thigh.001/left-shin/left-foot/left-foot_end
-        weight: 1
-      - path: chicken-rig/right-thigh
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot
-        weight: 1
-      - path: chicken-rig/right-thigh/right-thigh.001/right-shin/right-foot/right-foot_end
-        weight: 1
-      - path: chicken-rig/spine
-        weight: 1
-      - path: chicken-rig/spine/head
-        weight: 1
-      - path: chicken-rig/spine/head/bone
-        weight: 1
-      - path: chicken-rig/spine/head/bone/bone_end
-        weight: 1
-      - path: chicken-rig/tail
-        weight: 1
-      - path: chicken-rig/tail/tail_end
-        weight: 1
+      transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.8
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -639,7 +300,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

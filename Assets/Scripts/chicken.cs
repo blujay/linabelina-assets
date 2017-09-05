@@ -29,7 +29,7 @@ public class chicken : MonoBehaviour {
 		chickenAnimator = transform.Find("chicken-rigged").GetComponent<Animator>();
 		SetToResting();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (chickenAnimator.GetCurrentAnimatorStateInfo(0).IsName("Rest") && currentState != ChickenAnimationState.RESTING) {
@@ -40,24 +40,24 @@ public class chicken : MonoBehaviour {
 
 		if(timeToNextStateChange <= 0 && currentState == ChickenAnimationState.RESTING) {
 			switch(Random.Range(0, 3)) {
-				case 0:
-					currentState = ChickenAnimationState.PECKING;
-					chickenAnimator.SetTrigger("pecking");
-					break;
-				case 1:
-					currentState = ChickenAnimationState.IDLE;
-					chickenAnimator.SetTrigger("idle");
-					break;
-				case 2:
-					currentState = ChickenAnimationState.WALKING;
-					chickenAnimator.SetBool("walking", true);
-					goalPosition = new Vector3(transform.localPosition.x + Random.Range(-10.5f, 10.5f), transform.localPosition.y, transform.localPosition.z + Random.Range(-10.5f, 10.5f));
-			
+			case 0:
+				currentState = ChickenAnimationState.PECKING;
+				chickenAnimator.SetTrigger("pecking");
+				break;
+			case 1:
+				currentState = ChickenAnimationState.IDLE;
+				chickenAnimator.SetTrigger("idle");
+				break;
+			case 2:
+				currentState = ChickenAnimationState.WALKING;
+				chickenAnimator.SetBool("walking", true);
+				goalPosition = new Vector3(transform.localPosition.x + Random.Range(-10.5f, 10.5f), transform.localPosition.y, transform.localPosition.z + Random.Range(-10.5f, 10.5f));
 
-					//this is just a visualisation of the point the chicken is aiming for. It should only be uncommented when debugging
-					//GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-					//goal.transform.position = new Vector3(goalPosition.x, goalPosition.y + 2, goalPosition.z);
-					break;
+
+				//this is just a visualisation of the point the chicken is aiming for. It should only be uncommented when debugging
+				//GameObject goal = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+				//goal.transform.position = new Vector3(goalPosition.x, goalPosition.y + 2, goalPosition.z);
+				break;
 			}
 		}
 

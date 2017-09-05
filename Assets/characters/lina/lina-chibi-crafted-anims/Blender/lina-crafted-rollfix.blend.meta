@@ -87,6 +87,26 @@ ModelImporter:
     100158: thumb_3_L
     100160: thumb_3_R
     100162: torso
+    100164: chest
+    100166: hand-L
+    100168: hand-R
+    100170: hip-L
+    100172: hip-R
+    100174: hips
+    100176: lina-body
+    100178: lina-hair
+    100180: lina-skeleton
+    100182: lower-leg-L
+    100184: lower-leg-R
+    100186: shoulder-L
+    100188: shoulder-R
+    100190: toes-L
+    100192: toes-R
+    100194: upper-arm-L
+    100196: upper-arm-R
+    100198: upper-leg-L
+    100200: upper-leg-R
+    100202: Cube
     400000: antebrazo_iz
     400002: antebrazo_iz_001
     400004: anular_1_iz
@@ -169,11 +189,39 @@ ModelImporter:
     400158: thumb_3_L
     400160: thumb_3_R
     400162: torso
+    400164: chest
+    400166: hand-L
+    400168: hand-R
+    400170: hip-L
+    400172: hip-R
+    400174: hips
+    400176: lina-body
+    400178: lina-hair
+    400180: lina-skeleton
+    400182: lower-leg-L
+    400184: lower-leg-R
+    400186: shoulder-L
+    400188: shoulder-R
+    400190: toes-L
+    400192: toes-R
+    400194: upper-arm-L
+    400196: upper-arm-R
+    400198: upper-leg-L
+    400200: upper-leg-R
+    400202: Cube
     2300000: location_chibi
+    2300002: lina-skeleton
+    2300004: Cube
     3300000: location_chibi
+    3300002: lina-skeleton
+    3300004: Cube
     4300000: location_chibi
     4300002: cuerpo
     4300004: pelo
+    4300006: lina-skeleton
+    4300008: lina-body
+    4300010: lina-hair
+    4300012: Cube
     7400000: Default Take
     7400002: idle
     7400004: posici_n_rest
@@ -187,6 +235,8 @@ ModelImporter:
     9500000: //RootNode
     13700000: cuerpo
     13700002: pelo
+    13700004: lina-body
+    13700006: lina-hair
   materials:
     importMaterials: 1
     materialName: 0
