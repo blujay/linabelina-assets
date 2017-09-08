@@ -58,7 +58,7 @@
      <Compile Include="Assets\Scripts\EggCollector.cs" />
      <Compile Include="Assets\Scripts\EggScript.cs" />
      <Compile Include="Assets\Scripts\IKControl.cs" />
-     <Compile Include="Assets\Scripts\PickupObjects.cs" />
+     <Compile Include="Assets\Scripts\PickupEggs.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnCollision.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnTrigger.cs" />
      <Compile Include="Assets\Scripts\playEggBounceAudio.cs" />
