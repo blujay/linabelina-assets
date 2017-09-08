@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: lina-left-arm-hand
+  m_Mask: 00000000000000000000000000000000000000000100000000000000010000000000000000000000000000000100000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: cuerpo
+    m_Weight: 1
+  - m_Path: location chibi
+    m_Weight: 1
+  - m_Path: location chibi/Armature body
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/Controller foot.L
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/con de con de punta iz
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/con de con de punta iz/con
+      de punta iz
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/con de con de punta iz/con
+      de punta iz/hueso CON talon iz
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/con de con de punta iz/con
+      de punta iz/hueso CON talon iz/hueso CON talon iz_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/Controller stub toe.L
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/Controller stub toe.L/Controller
+      stub toe.L_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/knee.L
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.L/knee.L/knee.L_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/con de con de punta der
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/con de con de punta der/con
+      de punta der
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/con de con de punta der/con
+      de punta der/hueso CON talon der
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/con de con de punta der/con
+      de punta der/hueso CON talon der/hueso CON talon der_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/Controller stub toe.R
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/Controller stub toe.R/Controller
+      stub toe.R_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/knee.R
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller foot.R/knee.R/knee.R_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller hand.L
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller hand.L/Controller hand.L_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller hand.R
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/Controller hand.R/Controller hand.R_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/cubit.L
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/cubit.L/cubit.L_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/cubit.R
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/cubit.R/cubit.R_end
+    m_Weight: 0
+  - m_Path: location chibi/Armature body/hip
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der/muslo der
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der/muslo der/pierna der
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der/muslo der/pierna der/talon
+      der
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der/muslo der/pierna der/talon
+      der/punta der
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga der/muslo der/pierna der/talon
+      der/punta der/punta der_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz/muslo iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz/muslo iz/pierna iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz/muslo iz/pierna iz/talon iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz/muslo iz/pierna iz/talon iz/punta
+      iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/nalga iz/muslo iz/pierna iz/talon iz/punta
+      iz/punta iz_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/neck
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/neck/head
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/neck/head/head_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/neck/head/pelo
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/anular 3 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/anular 3 iz/anular 2 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/anular 3 iz/anular 2 iz/anular 1 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/anular 3 iz/anular 2 iz/anular 1 iz/anular 1 iz_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller index finger.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller index finger.L/Controller index finger.L_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller middle finger.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller middle finger.L/Controller middle finger.L_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller Pinkie finger.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller Pinkie finger.L/Controller Pinkie finger.L_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller ring finger.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/Controller ring finger.L/Controller ring finger.L_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/dedo corazon 3 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/dedo corazon 3 iz/dedo corazon 2 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/dedo corazon 3 iz/dedo corazon 2 iz/dedo corazon 1 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/dedo corazon 3 iz/dedo corazon 2 iz/dedo corazon 1 iz/dedo corazon
+      1 iz_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/indice 3 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/indice 3 iz/indice 2 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/indice 3 iz/indice 2 iz/indice 1 iz
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/indice 3 iz/indice 2 iz/indice 1 iz/indice 1 iz_end
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/me\xF1ique 3 iz"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/me\xF1ique 3 iz/me\xF1ique 2 iz"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/me\xF1ique 3 iz/me\xF1ique 2 iz/me\xF1ique 1 iz"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/me\xF1ique 3 iz/me\xF1ique 2 iz/me\xF1ique 1 iz/me\xF1ique 1 iz_end"
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/thumb 3.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/thumb 3.L/thumb 2.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/thumb 3.L/thumb 2.L/thumb 1.L
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.L/antebrazo iz/brazo
+      iz/palma iz/thumb 3.L/thumb 2.L/thumb 1.L/thumb 1.L_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/anular 3 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/anular 3 iz.001/anular 2 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/anular 3 iz.001/anular 2 iz.001/anular 1 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/anular 3 iz.001/anular 2 iz.001/anular 1 iz.001/anular 1
+      iz.001_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller index finger.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller index finger.R/Controller index finger.R_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller middle finger.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller middle finger.R/Controller middle finger.R_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller Pinkie finger.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller Pinkie finger.R/Controller Pinkie finger.R_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller ring finger.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/Controller ring finger.R/Controller ring finger.R_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/dedo corazon 3 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/dedo corazon 3 iz.001/dedo corazon 2 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/dedo corazon 3 iz.001/dedo corazon 2 iz.001/dedo corazon
+      1 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/dedo corazon 3 iz.001/dedo corazon 2 iz.001/dedo corazon
+      1 iz.001/dedo corazon 1 iz.001_end
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/indice 3 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/indice 3 iz.001/indice 2 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/indice 3 iz.001/indice 2 iz.001/indice 1 iz.001
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/indice 3 iz.001/indice 2 iz.001/indice 1 iz.001/indice 1
+      iz.001_end
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/me\xF1ique 3 iz.001"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/me\xF1ique 3 iz.001/me\xF1ique 2 iz.001"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/me\xF1ique 3 iz.001/me\xF1ique 2 iz.001/me\xF1ique 1 iz.001"
+    m_Weight: 1
+  - m_Path: "location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/me\xF1ique 3 iz.001/me\xF1ique 2 iz.001/me\xF1ique 1 iz.001/me\xF1ique
+      1 iz.001_end"
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/thumb 3.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/thumb 3.R/thumb 2.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/thumb 3.R/thumb 2.R/thumb 1.R
+    m_Weight: 1
+  - m_Path: location chibi/Armature body/hip/spine/torso/shoulder.R/antebrazo iz.001/brazo
+      iz.001/palma iz.001/thumb 3.R/thumb 2.R/thumb 1.R/thumb 1.R_end
+    m_Weight: 1

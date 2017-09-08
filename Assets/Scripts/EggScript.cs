@@ -41,7 +41,7 @@ public class EggScript : MonoBehaviour {
 
 	public void HighlightOn()
 	{
-		gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+		gameObject.GetComponent<Renderer>().material.color = Color.red;
 	}
 	
 	public void HighlightOff()

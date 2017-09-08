@@ -43,10 +43,11 @@ public class PickupObjects : MonoBehaviour {
 		if (Input.GetKey(KeyCode.S)) {
 			//print("S pressed");
 			animator.SetBool ("waving", true);
+			Debug.Log ("waving");
 		} else{
 			animator.SetBool("waving",false);
 		}
-		var nearestEgg = FindClosestEgg();
+		var nearestEgg = FindNearestEgg();
 		if (nearestEgg)
 		{
 			nearestEgg.GetComponent<EggScript>().HighlightOn();
@@ -67,7 +68,9 @@ public class PickupObjects : MonoBehaviour {
 	{
 		animator.SetBool("pickup",true);
 		float pickupHeight = nearestEgg.position.y - transform.position.y;
-		Debug.Log("ph = " + pickupHeight);
+		Vector3 pickupDistance = nearestEgg.transform.position - this.transform.position;
+		Debug.Log("pickup height = " + pickupHeight);
+		Debug.Log ("distance from egg = " + pickupDistance);
 		animator.SetFloat("PickupHeight", pickupHeight);
 	}
 	
@@ -80,7 +83,7 @@ public class PickupObjects : MonoBehaviour {
 		}
 	}
 
-	Transform FindClosestEgg()
+	Transform FindNearestEgg()
 	{
 		Transform tMin = null;
 		float minDist = Mathf.Infinity;
