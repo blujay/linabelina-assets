@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class PickupObjects : MonoBehaviour {
-	
+
 	IEnumerator TurnTowards(Transform target)
 	{
 		Debug.Log("turning");
@@ -21,10 +21,14 @@ public class PickupObjects : MonoBehaviour {
 		}
 	}
 
-	//private GameObject handholder;
-	private Animator animator;
-	
 	public List<Collider> TriggerList;
+
+	private GameObject eggToPick = null;
+	private Animator animator;
+	private Transform nearestEgg = null;
+	public GameObject parentBone = null;
+	
+
 
 	// Use this for initialization
 	void Start () {
@@ -35,43 +39,55 @@ public class PickupObjects : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.R)) {
-			//print("mouse pressed");
 			animator.SetBool ("reaching", true);
 		} else{
 			animator.SetBool("reaching",false);
 		}
 		if (Input.GetKey(KeyCode.S)) {
-			//print("S pressed");
 			animator.SetBool ("waving", true);
 			Debug.Log ("waving");
 		} else{
 			animator.SetBool("waving",false);
 		}
-		var nearestEgg = FindNearestEgg();
-		if (nearestEgg)
-		{
-			nearestEgg.GetComponent<EggScript>().HighlightOn();
-			if (Input.GetKey(KeyCode.P))
-			{
-				PickupEgg(nearestEgg);
+		nearestEgg = FindNearestEgg();
+
+		if (nearestEgg) {
+			nearestEgg.GetComponent<EggScript> ().HighlightOn ();
+			if (Input.GetKey (KeyCode.P)) {
+				PickupEgg (nearestEgg);
 			}
-			if (Input.GetKey(KeyCode.T))
-			{
-				Debug.Log("starting to turn");
+			if (Input.GetKey (KeyCode.T)) {
+				//Debug.Log("starting to turn");
 				//StartCoroutine(TurnTowards(nearestEgg));
 			}
 		}
-		
 	}
 
 	void PickupEgg(Transform nearestEgg)
 	{
-		animator.SetBool("pickup",true);
+		animator.SetTrigger("pickup");
 		float pickupHeight = nearestEgg.position.y - transform.position.y;
 		Vector3 pickupDistance = nearestEgg.transform.position - this.transform.position;
 		Debug.Log("pickup height = " + pickupHeight);
 		Debug.Log ("distance from egg = " + pickupDistance);
 		animator.SetFloat("PickupHeight", pickupHeight);
+		eggToPick = nearestEgg.gameObject;
+	}
+
+	public void SetParent(){
+		eggToPick.transform.parent = parentBone.transform;
+		eggToPick.transform.localPosition = Vector3.zero;
+
+		//add to score
+	}
+
+	public void DestroyEgg(){
+		if (eggToPick){
+				Destroy (eggToPick.gameObject);
+				eggToPick = null;
+				nearestEgg = null;
+			}
+		
 	}
 	
 	void OnTriggerEnter(Collider other)
@@ -85,19 +101,20 @@ public class PickupObjects : MonoBehaviour {
 
 	Transform FindNearestEgg()
 	{
-		Transform tMin = null;
+		Transform nearestEgg = null;
 		float minDist = Mathf.Infinity;
 		Vector3 currentPos = transform.position;
-		foreach (Collider t in TriggerList)
+		foreach (Collider egg in TriggerList)
 		{
-			float dist = Vector3.Distance(t.transform.position, currentPos);
+			float dist = Vector3.Distance(egg.transform.position, currentPos);
 			if (dist < minDist)
 			{
-				tMin = t.transform;
+				nearestEgg = egg.transform;
 				minDist = dist;
 			}
 		}
-		return tMin;
+		return nearestEgg;
+
 	}
 		
 	void OnTriggerExit(Collider other)
