@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class PickupObjects : MonoBehaviour {
+public class PickupEggs : MonoBehaviour {
 
 	IEnumerator TurnTowards(Transform target)
 	{
@@ -22,11 +22,15 @@ public class PickupObjects : MonoBehaviour {
 	}
 
 	public List<Collider> TriggerList;
+	public GameObject parentBone = null;
+	public AudioClip pickupSound = null;
+	public AudioClip dropSound = null;
+
 
 	private GameObject eggToPick = null;
 	private Animator animator;
 	private Transform nearestEgg = null;
-	public GameObject parentBone = null;
+
 	
 
 
@@ -77,12 +81,16 @@ public class PickupObjects : MonoBehaviour {
 	public void SetParent(){
 		eggToPick.transform.parent = parentBone.transform;
 		eggToPick.transform.localPosition = Vector3.zero;
+		eggToPick.transform.localRotation = Quaternion.identity;
+		GetComponent<AudioSource>().PlayOneShot(pickupSound, 1F);
+
 
 		//add to score
 	}
 
 	public void DestroyEgg(){
 		if (eggToPick){
+			GetComponent<AudioSource>().PlayOneShot(dropSound, 1F);
 				Destroy (eggToPick.gameObject);
 				eggToPick = null;
 				nearestEgg = null;
