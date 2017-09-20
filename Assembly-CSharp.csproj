@@ -58,11 +58,16 @@
      <Compile Include="Assets\Scripts\EggCollector.cs" />
      <Compile Include="Assets\Scripts\EggScript.cs" />
      <Compile Include="Assets\Scripts\IKControl.cs" />
+     <Compile Include="Assets\Scripts\LoadSceneOnTriggerEnter.cs" />
      <Compile Include="Assets\Scripts\PickupEggs.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnCollision.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnTrigger.cs" />
      <Compile Include="Assets\Scripts\playEggBounceAudio.cs" />
+     <Compile Include="Assets\Scripts\PrintMessage.cs" />
+     <Compile Include="Assets\Scripts\Spin.cs" />
+     <Compile Include="Assets\Scripts\StartSceneController.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonFootsteps.cs" />
+     <Compile Include="Assets\Scripts\Throw.cs" />
      <Compile Include="Assets\Sketchfab Exporter\ExporterSKFB.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_Accessor.cs" />
      <Compile Include="Assets\Sketchfab Exporter\GlTF_AmbientLight.cs" />
@@ -107,7 +112,6 @@
      <Compile Include="Assets\Sketchfab Exporter\Preset.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SceneToGlTFWiz.cs" />
      <Compile Include="Assets\Sketchfab Exporter\SimpleJSON.cs" />
-     <Compile Include="Assets\Throw.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -137,6 +141,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Fonts\oswald\SIL Open Font License.txt" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
@@ -171,6 +176,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Fonts\pacifico\SIL Open Font License.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />

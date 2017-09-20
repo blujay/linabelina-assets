@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/soliru-terrain-mesh.unity
     guid: 7a2c047b7839e40e1a14f603e80fc3c6
+  - enabled: 1
+    path: Assets/Scenes/chicken animation.unity
+    guid: d7c808edf7b824c79b8df03a07d0c31f

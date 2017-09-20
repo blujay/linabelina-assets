@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickupEggs : MonoBehaviour {
 
@@ -21,12 +22,16 @@ public class PickupEggs : MonoBehaviour {
 		}
 	}
 
+
+
 	public List<Collider> TriggerList;
 	public GameObject parentBone = null;
 	public AudioClip pickupSound = null;
 	public AudioClip dropSound = null;
+	public int collectablesNeeded;
+	public Text progressText;
 
-
+	private int score;
 	private GameObject eggToPick = null;
 	private Animator animator;
 	private Transform nearestEgg = null;
@@ -38,6 +43,8 @@ public class PickupEggs : MonoBehaviour {
 	void Start () {
 		//handholder = GameObject.Find("HandHolder") as GameObject;
 		animator =  GetComponentInParent<Animator> ();
+		score = collectablesNeeded;
+
 	}
 	
 	// Update is called once per frame
@@ -65,6 +72,7 @@ public class PickupEggs : MonoBehaviour {
 				//StartCoroutine(TurnTowards(nearestEgg));
 			}
 		}
+		progressText.text = score.ToString();
 	}
 
 	void PickupEgg(Transform nearestEgg)
@@ -83,10 +91,8 @@ public class PickupEggs : MonoBehaviour {
 		eggToPick.transform.localPosition = Vector3.zero;
 		eggToPick.transform.localRotation = Quaternion.identity;
 		GetComponent<AudioSource>().PlayOneShot(pickupSound, 1F);
+		}
 
-
-		//add to score
-	}
 
 	public void DestroyEgg(){
 		if (eggToPick){
@@ -94,6 +100,8 @@ public class PickupEggs : MonoBehaviour {
 				Destroy (eggToPick.gameObject);
 				eggToPick = null;
 				nearestEgg = null;
+				score -= 1;
+				Debug.Log ("Score: " + score);
 			}
 		
 	}
