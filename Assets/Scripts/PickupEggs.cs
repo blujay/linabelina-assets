@@ -42,22 +42,22 @@ public class PickupEggs : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.R)) {
-			animator.SetBool ("reaching", true);
-		} else{
-			animator.SetBool("reaching",false);
-		}
-		if (Input.GetKey(KeyCode.S)) {
-			animator.SetBool ("waving", true);
-			Debug.Log ("waving");
-		} else{
-			animator.SetBool("waving",false);
-		}
+		//if (Input.GetKey(KeyCode.R)) {
+			//animator.SetBool ("reaching", true);
+		//} else{
+			//animator.SetBool("reaching",false);
+		//}
+		//if (Input.GetKey(KeyCode.W)) {
+			//animator.SetBool ("waving", true);
+			//Debug.Log ("waving");
+		//} else{
+			//animator.SetBool("waving",false);
+		//}
 		nearestEgg = FindNearestEgg();
 
 		if (nearestEgg) {
 			nearestEgg.GetComponent<EggScript> ().HighlightOn ();
-			if (Input.GetKey (KeyCode.P)) {
+			if(Input.GetButton("Fire1")) {
 				PickupEgg (nearestEgg);
 			}
 			if (Input.GetKey (KeyCode.T)) {
