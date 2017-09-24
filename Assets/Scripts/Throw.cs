@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Throw : MonoBehaviour {
 
-	public GameObject theObject;
+	public GameObject eggPrefab;
+	public GameObject staticEggPrefab;
 	private GameObject newObject;
 	private EggScript objectScript;
 
@@ -19,12 +20,24 @@ public class Throw : MonoBehaviour {
 
 	void CloneObject(){
 		//Debug.Log("Cloning");
-		theObject.GetComponent <EggScript> ().CloneMe();
+		eggPrefab.GetComponent <EggScript> ().CloneMe();
 	}
 
 	void ThrowObject () {
 		//Debug.Log("Throwiiing");
 		newObject = GameObject.Find ("Current Clone");
 		newObject.GetComponent <EggScript> ().ReleaseMe();
+		StartCoroutine(stopRolling());
 	}
-}
+
+		IEnumerator stopRolling(){
+			print(Time.time);
+			yield return new WaitForSeconds(5);
+			Vector3 eggPosition = newObject.transform.position;
+			Debug.Log (eggPosition);
+			//GameObject NewEgg = Instantiate (staticEggPrefab, eggPosition) as GameObject;
+			
+		}
+	}
+
+

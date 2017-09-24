@@ -49,11 +49,11 @@ public class PickupEggs : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//if (Input.GetKey(KeyCode.R)) {
-			//animator.SetBool ("reaching", true);
-		//} else{
-			//animator.SetBool("reaching",false);
-		//}
+		if (Input.GetKey(KeyCode.R)) {
+			animator.SetBool ("reaching", true);
+		} else {
+			animator.SetBool("reaching",false);
+		}
 		//if (Input.GetKey(KeyCode.W)) {
 			//animator.SetBool ("waving", true);
 			//Debug.Log ("waving");
@@ -75,8 +75,7 @@ public class PickupEggs : MonoBehaviour {
 		progressText.text = score.ToString();
 	}
 
-	void PickupEgg(Transform nearestEgg)
-	{
+	void PickupEgg(Transform nearestEgg){
 		animator.SetTrigger("pickup");
 		float pickupHeight = nearestEgg.position.y - transform.position.y;
 		Vector3 pickupDistance = nearestEgg.transform.position - this.transform.position;
@@ -97,34 +96,28 @@ public class PickupEggs : MonoBehaviour {
 	public void DestroyEgg(){
 		if (eggToPick){
 			GetComponent<AudioSource>().PlayOneShot(dropSound, 1F);
-				Destroy (eggToPick.gameObject);
+			Destroy (eggToPick.gameObject);
 				eggToPick = null;
 				nearestEgg = null;
 				score -= 1;
 				Debug.Log ("Score: " + score);
 			}
-		
-	}
+		}
 	
-	void OnTriggerEnter(Collider other)
-	{
-		if(!TriggerList.Contains(other) && other.gameObject.CompareTag("Egg"))
-		{
+	void OnTriggerEnter(Collider other){
+		if(!TriggerList.Contains(other) && other.gameObject.CompareTag("Egg")){
 			TriggerList.Add(other);
 			Debug.Log("adding " + other);
 		}
 	}
 
-	Transform FindNearestEgg()
-	{
+	Transform FindNearestEgg(){
 		Transform nearestEgg = null;
 		float minDist = Mathf.Infinity;
 		Vector3 currentPos = transform.position;
-		foreach (Collider egg in TriggerList)
-		{
+		foreach (Collider egg in TriggerList){
 			float dist = Vector3.Distance(egg.transform.position, currentPos);
-			if (dist < minDist)
-			{
+			if (dist < minDist){
 				nearestEgg = egg.transform;
 				minDist = dist;
 			}
@@ -133,16 +126,13 @@ public class PickupEggs : MonoBehaviour {
 
 	}
 		
-	void OnTriggerExit(Collider other)
-	{
-		if(TriggerList.Contains(other))
-		{
+	void OnTriggerExit(Collider other){
+		if(TriggerList.Contains(other)){
 			//remove it from the list
 			TriggerList.Remove(other);
 			other.GetComponent<EggScript>().HighlightOff();
 			Debug.Log("removing " + other);
 		}
 	}
-	
 }
 	
