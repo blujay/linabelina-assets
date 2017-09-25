@@ -29,8 +29,8 @@ public class ObjectScript : MonoBehaviour {
 
 	public void ReleaseMe () {
 		handheldObject.GetComponent<Rigidbody> ().useGravity = true;
-		this.GetComponent<MeshCollider> ().enabled = true;
-		this.transform.parent = null;
+		handheldObject.GetComponent<MeshCollider> ().enabled = true;
+		handheldObject.transform.parent = null;
 
 	}
 
