@@ -528,7 +528,8 @@ ModelImporter:
       - time: 0.42955175
         functionName: SetParent
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11500000, guid: 5a773297ad7e4459e86d94b9b2f65a84,
+          type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.9705882, g: 0.9320994, b: 0.80644464, a: 1}
   m_AmbientGroundColor: {r: 0.28676468, g: 0.27903327, b: 0.2635705, a: 1}
   m_AmbientIntensity: 1.5
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: d2aa5810be55046a9868257fcda0cf4e, type: 2}
   m_HaloStrength: 0.5
@@ -10681,6 +10681,12 @@ Prefab:
       propertyPath: progressText
       value: 
       objectReference: {fileID: 1939000144}
+    - target: {fileID: 114913814352679906, guid: d7db3451f8324491d939fca3be68c490,
+        type: 2}
+      propertyPath: throwPrefab
+      value: 
+      objectReference: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7db3451f8324491d939fca3be68c490, type: 2}
   m_IsPrefabParent: 0
@@ -13790,8 +13796,7 @@ Prefab:
       propertyPath: m_Name
       value: egg-static (12)
       objectReference: {fileID: 0}
-    - target: {fileID: 114371836461578564, guid: 7b18f638a8441443fa10eef70e8b4b8c,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: EggPrefab
       value: 
       objectReference: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
@@ -14356,7 +14361,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1847307115}
-  m_LocalRotation: {x: -0.52379763, y: -0.35149986, z: 0.70503235, w: -0.32405782}
+  m_LocalRotation: {x: -0.5237976, y: -0.35149983, z: 0.7050323, w: -0.3240578}
   m_LocalPosition: {x: -395, y: 1303.5, z: -738.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
