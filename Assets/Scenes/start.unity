@@ -2435,7 +2435,7 @@ GameObject:
   - component: {fileID: 1112042018}
   - component: {fileID: 1112042017}
   m_Layer: 5
-  m_Name: people
+  m_Name: people credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3104,10 +3104,10 @@ MonoBehaviour:
   m_Text: "Lina Belina is an open source experience licenced under creative commons
     licence (CC BY-NC 3.0) \n\nSoftware:\nGame development: Unity3d\n3d Modeling and
     animation: Blender\nGraphics: Inkscape\nSound: Audacity\n\nChibi girl base (rigged)
-    by Poll on Blendswap.com\n\nCreative Commons Music: \n- Balance by Komiku\n- Blue
-    by Komiku\n- Excidentis foliae by Damiano Baldoni\n- Elio contro Atlante by Damiano
-    Baldoni\n\n\nYou can access the code on https://github.com/blujay/linabelina-assets\n\nFor
-    3d models:\nhttps://sketchfab.com/blujay/collections/lina-belina\n\n"
+    by Poll on Blendswap.com\nEgg sound by Anna Bertmark\nSweep_01.aiff by chmc on
+    freesound.org\n\nCreative Commons Music: \n- Balance by Komiku\n- Blue by Komiku\n-
+    Excidentis foliae by Damiano Baldoni\n- Elio contro Atlante by Damiano Baldoni\n\n\nYou
+    can access the code on https://github.com/blujay/linabelina-assets\n\nFor 3d models:\nhttps://sketchfab.com/blujay/collections/lina-belina\n\n"
 --- !u!222 &1280457249
 CanvasRenderer:
   m_ObjectHideFlags: 0

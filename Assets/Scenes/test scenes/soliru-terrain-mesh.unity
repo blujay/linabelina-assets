@@ -10681,28 +10681,6 @@ Prefab:
       propertyPath: progressText
       value: 
       objectReference: {fileID: 1939000144}
-    - target: {fileID: 114913814352679906, guid: d7db3451f8324491d939fca3be68c490,
-        type: 2}
-      propertyPath: theObject
-      value: 
-      objectReference: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
-        type: 2}
-    - target: {fileID: 114913814352679906, guid: d7db3451f8324491d939fca3be68c490,
-        type: 2}
-      propertyPath: eggPrefab
-      value: 
-      objectReference: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
-        type: 2}
-    - target: {fileID: 114913814352679906, guid: d7db3451f8324491d939fca3be68c490,
-        type: 2}
-      propertyPath: staticEggPrefab
-      value: 
-      objectReference: {fileID: 1049972052534684, guid: 7b18f638a8441443fa10eef70e8b4b8c,
-        type: 2}
-    - target: {fileID: 4961625682997316, guid: d7db3451f8324491d939fca3be68c490, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -319.594
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7db3451f8324491d939fca3be68c490, type: 2}
   m_IsPrefabParent: 0
@@ -15680,7 +15658,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 136eacf18251144c9b6087bd20efdf69, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.37
+  m_Volume: 0.224
   m_Pitch: 1
   Loop: 1
   Mute: 0
