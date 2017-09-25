@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33069109482269216}
   - component: {fileID: 23653869253057802}
   - component: {fileID: 64108168519633238}
-  - component: {fileID: 114371836461578564}
+  - component: {fileID: 114847822675794470}
   m_Layer: 0
   m_Name: egg-static
   m_TagString: Egg
@@ -96,7 +96,7 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 660de2a98ced849f98d73424f6115632, type: 3}
---- !u!114 &114371836461578564
+--- !u!114 &114847822675794470
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -104,7 +104,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1049972052534684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52b854544d534440293355f858ecdad8, type: 3}
+  m_Script: {fileID: 11500000, guid: ae3b6114205cc4edbb01ce8b18e83b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EggPrefab: {fileID: 1049972052534684}
+  throwPrefab: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
+    type: 2}

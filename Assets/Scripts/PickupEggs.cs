@@ -63,7 +63,7 @@ public class PickupEggs : MonoBehaviour {
 		nearestEgg = FindNearestEgg();
 
 		if (nearestEgg) {
-			nearestEgg.GetComponent<EggScript> ().HighlightOn ();
+			nearestEgg.GetComponent<ObjectScript> ().HighlightOn ();
 			if(Input.GetButton("Fire1")) {
 				PickupEgg (nearestEgg);
 			}
@@ -130,7 +130,7 @@ public class PickupEggs : MonoBehaviour {
 		if(TriggerList.Contains(other)){
 			//remove it from the list
 			TriggerList.Remove(other);
-			other.GetComponent<EggScript>().HighlightOff();
+			other.GetComponent<ObjectScript>().HighlightOff();
 			Debug.Log("removing " + other);
 		}
 	}

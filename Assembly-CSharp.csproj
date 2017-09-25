@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\IKControl.cs" />
      <Compile Include="Assets\Scripts\LoadSceneOnTriggerEnter.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\ObjectScript.cs" />
      <Compile Include="Assets\Scripts\PickupEggs.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnCollision.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnTrigger.cs" />
