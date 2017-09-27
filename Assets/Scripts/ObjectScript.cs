@@ -9,6 +9,7 @@ public class ObjectScript : MonoBehaviour {
 	private GameObject parentBone;
 	private GameObject handheldObject;
 	private Color initialColor;
+	public Animator playAnim;
 
 
 	// Use this for initialization
@@ -28,9 +29,9 @@ public class ObjectScript : MonoBehaviour {
 	}
 
 	public void ReleaseMe () {
+		handheldObject.transform.parent = null;
 		handheldObject.GetComponent<Rigidbody> ().useGravity = true;
 		handheldObject.GetComponent<MeshCollider> ().enabled = true;
-		handheldObject.transform.parent = null;
 
 	}
 

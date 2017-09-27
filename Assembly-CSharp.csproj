@@ -52,7 +52,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\animations\hopping-tree\scripts\treeBend.cs" />
+     <Compile Include="Assets\BiscuitBox.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\Script\csColorChangerinSampleScene.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\Script\csDemoScenceControl.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\Script\csParticleMake.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\Script\csRotate.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\Script\csSpiral.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
+     <Compile Include="Assets\Particle Ingredient Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
      <Compile Include="Assets\Scripts\ActionPoint.cs" />
+     <Compile Include="Assets\Scripts\Basket.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\Scripts\EasyFadeIn.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
@@ -62,6 +71,7 @@
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\ObjectScript.cs" />
      <Compile Include="Assets\Scripts\PickupEggs.cs" />
+     <Compile Include="Assets\Scripts\PickupObjects.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnCollision.cs" />
      <Compile Include="Assets\Scripts\playAudioClipOnTrigger.cs" />
      <Compile Include="Assets\Scripts\playEggBounceAudio.cs" />
