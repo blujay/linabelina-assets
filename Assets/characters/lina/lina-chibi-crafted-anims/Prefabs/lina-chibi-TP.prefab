@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 114396644461762194}
   - component: {fileID: 114097949033668920}
   - component: {fileID: 114401298674276274}
-  - component: {fileID: 114735016059894426}
+  - component: {fileID: 114756848188761632}
   m_Layer: 0
   m_Name: lina-chibi-TP
   m_TagString: Player
@@ -2843,7 +2843,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 47c9e0f79e19f464d94bd25eed5a995f, type: 3}
   - {fileID: 8300000, guid: c860d3d31bbfe4358987b26e5c0b3d43, type: 3}
   - {fileID: 8300000, guid: e82465e0917434443a98e5c036567ea3, type: 3}
---- !u!114 &114735016059894426
+--- !u!114 &114756848188761632
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2851,15 +2851,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170399104071728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1c154a78a87143dcae2064f23cb9742, type: 3}
+  m_Script: {fileID: 11500000, guid: 270a033739c1b405e92d0ea1412e79ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerList: []
   parentBone: {fileID: 1100448093403436}
   pickupSound: {fileID: 8300000, guid: 2ea27734d9c3a460b93ab4226bda6148, type: 3}
   dropSound: {fileID: 8300000, guid: 4daba495601c943a6968bce6504d05d2, type: 3}
-  collectablesNeeded: 12
+  collectablesTarget: 3
   progressText: {fileID: 0}
+  box: {fileID: 0}
+  basket: {fileID: 0}
+  glitter: {fileID: 198972534318780012, guid: fe3d633da88c24750b058b3f1b3e2cf3, type: 2}
 --- !u!114 &114913814352679906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2871,8 +2874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a773297ad7e4459e86d94b9b2f65a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eggPrefab: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2, type: 2}
-  staticEggPrefab: {fileID: 1049972052534684, guid: 7b18f638a8441443fa10eef70e8b4b8c,
+  throwPrefab: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
     type: 2}
 --- !u!136 &136776043087232940
 CapsuleCollider:

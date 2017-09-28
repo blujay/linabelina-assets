@@ -9,7 +9,6 @@ public class ObjectScript : MonoBehaviour {
 	private GameObject parentBone;
 	private GameObject handheldObject;
 	private Color initialColor;
-	public Animator playAnim;
 
 
 	// Use this for initialization

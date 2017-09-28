@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 198972534318780012}
   - component: {fileID: 199973055321209944}
   m_Layer: 0
-  m_Name: ElementalBallWarm(Clone)
+  m_Name: ElementalBallWarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,8 +84,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871247564813164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -573.098, y: 945.798, z: -897.008}
+  m_LocalRotation: {x: 0.15315317, y: 0.3717463, z: 0.14633429, w: 0.90384465}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4936917476300070}
@@ -113,13 +113,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1323005965012048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalScale: {x: 0.43846124, y: 0.43846124, z: 0.43846124}
   m_Children: []
   m_Father: {fileID: 4163338108466242}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4936917476300070
 Transform:
   m_ObjectHideFlags: 1
@@ -141,10 +141,10 @@ Light:
   m_GameObject: {fileID: 1323005965012048}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 1, g: 0.7794118, b: 0.44852942, a: 1}
-  m_Intensity: 1.82
-  m_Range: 25
+  m_Type: 1
+  m_Color: {r: 0.9044118, g: 0.7900303, b: 0.61845803, a: 0.609}
+  m_Intensity: 1.4
+  m_Range: 28.59
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -165,20 +165,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.2
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -191,7 +177,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1441868923162824}
   serializedVersion: 5
   lengthInSec: 0.25
-  simulationSpeed: 1
+  simulationSpeed: 0.1
   looping: 1
   prewarm: 0
   playOnAwake: 1
@@ -242,7 +228,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1943142732
+  randomSeed: 646013625
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -320,7 +306,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.216}
+      maxColor: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 0.291}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3468,7 +3454,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1134170044
+  randomSeed: 1564441441
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3516,7 +3502,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3546,7 +3532,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9647059, g: 0.83321166, b: 0.4039215, a: 0.141}
+      maxColor: {r: 0.9647059, g: 0.83321166, b: 0.4039215, a: 0.247}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6700,7 +6686,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 964427822
+  randomSeed: 1507162644
   InitialModule:
     serializedVersion: 3
     enabled: 1

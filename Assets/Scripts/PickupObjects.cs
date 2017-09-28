@@ -26,6 +26,7 @@ public class PickupObjects : MonoBehaviour {
 	private Transform nearestObject = null;
 	private bool targetReached = false;
 	private int rewardRelease;
+	private BoxScript boxScript;
 
 	
 
@@ -138,16 +139,8 @@ public class PickupObjects : MonoBehaviour {
 				rewardRelease += 1;
 				inPocket -= 1;
 				Debug.Log ("eggs in basket = " + rewardRelease);
-				if (inPocket == 0) {
-					boxAnim.SetBool ("BoxOpen", true);
-					releaseParticles ();
-				} 
 			}
 		} 	
-	}
-
-	void releaseParticles(){
-		Instantiate (glitter, box.transform.position, Quaternion.identity);
 	}
 }
 		
