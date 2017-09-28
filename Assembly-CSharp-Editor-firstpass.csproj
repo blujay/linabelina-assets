@@ -89,7 +89,6 @@
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-     <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />

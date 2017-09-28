@@ -272,8 +272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108.00011, y: -210.70001}
-  m_SizeDelta: {x: 160, y: 76.7}
+  m_AnchoredPosition: {x: 94, y: -210.70001}
+  m_SizeDelta: {x: 188, y: 76.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179726162
 MonoBehaviour:
@@ -315,7 +315,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1112366213}
-        m_MethodName: LoadControls
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.9215687, b: 0.9450981, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.259}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2638,7 +2638,7 @@ MonoBehaviour:
   credits: {fileID: 2009178268}
   closeCreditsButton: {fileID: 1900900005}
   controlsText: {fileID: 311682107}
-  sceneToLoad: intro
+  sceneToLoad: eggs for biscuits
 --- !u!1001 &1129679270
 Prefab:
   m_ObjectHideFlags: 0
@@ -2809,8 +2809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -147.39993, y: -210.70001}
-  m_SizeDelta: {x: 246.8, y: 76.7}
+  m_AnchoredPosition: {x: -174.8, y: -210.70001}
+  m_SizeDelta: {x: 289.1, y: 76.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202284949
 MonoBehaviour:
@@ -3761,7 +3761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.049974, y: -35.1}
+  m_AnchoredPosition: {x: 65, y: -16}
   m_SizeDelta: {x: 596, y: 75.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!20 &1783541554 stripped
@@ -4363,7 +4363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.53333336, g: 0.9215687, b: 0.9450981, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4641,7 +4641,7 @@ Prefab:
       objectReference: {fileID: 1506015645}
     - target: {fileID: 11400002, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
       propertyPath: closestDistance
-      value: 16
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49a0e923d39ec3c4c8bb97699e2f2903, type: 2}
       propertyPath: m_LocalRotation.x
