@@ -315,7 +315,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1112366213}
-        m_MethodName: LoadScene
+        m_MethodName: LoadControls
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1042,8 +1042,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1112366208}
-        m_MethodName: 
+      - m_Target: {fileID: 1112366213}
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2955,7 +2955,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222624432}
-  m_LocalRotation: {x: 0.1492892, y: 0.61306506, z: -0.554661, w: 0.542416}
+  m_LocalRotation: {x: 0.14928922, y: 0.6130651, z: -0.55466104, w: 0.54241604}
   m_LocalPosition: {x: 1846.08, y: 483.83, z: 1160.97}
   m_LocalScale: {x: 0.027158005, y: 0.027158005, z: 0.02715803}
   m_Children: []

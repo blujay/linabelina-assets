@@ -8,6 +8,7 @@ public class BoxScript : MonoBehaviour {
 	public Transform spawnPoint;
 	public GameObject particles;
 	public AudioClip releaseSound;
+	public AudioClip gaspSound;
 	private AudioSource audio;
 
 
@@ -24,11 +25,13 @@ public class BoxScript : MonoBehaviour {
 	void releaseParticles(){
 		GameObject particlesInstance = Instantiate (particles, spawnPoint.transform) as GameObject;
 		particles.transform.localPosition = Vector3.zero;
+
 	}
 
 	void releaseReward (){
 		GameObject rewardObject = Instantiate (rewardPrefab, spawnPoint.transform) as GameObject;
 		rewardObject.transform.localPosition = Vector3.zero;
 		audio.PlayOneShot (releaseSound);
+		audio.PlayOneShot (gaspSound);
 	}
 }

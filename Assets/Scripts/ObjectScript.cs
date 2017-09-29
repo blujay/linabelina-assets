@@ -9,6 +9,7 @@ public class ObjectScript : MonoBehaviour {
 	private GameObject parentBone;
 	private GameObject handheldObject;
 	private Color initialColor;
+	private int inBox;
 
 
 	// Use this for initialization

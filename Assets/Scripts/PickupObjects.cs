@@ -15,17 +15,17 @@ public class PickupObjects : MonoBehaviour {
 	public Text progressText;
 	public GameObject box;
 	public GameObject basket;
-	public ParticleSystem glitter;
 
 	private int collectablesNeeded;
 	private int inPocket;
+	private int inBasket;
 	private bool overBasket;
+	private bool boxOpen = false;
 	private GameObject ObjectToPick = null;
 	private Animator playerAnim;
 	private Animator boxAnim;
 	private Transform nearestObject = null;
 	private bool targetReached = false;
-	private int rewardRelease;
 	private BoxScript boxScript;
 
 	
@@ -47,7 +47,7 @@ public class PickupObjects : MonoBehaviour {
 		if (nearestObject) {
 			nearestObject.GetComponent<ObjectScript> ().HighlightOn ();
 
-			if(Input.GetButton("Fire1")) {
+			if(Input.GetButtonDown("Fire1")) {
 				PickupObject (nearestObject);
 				//Debug.Log ("clicked mouse");
 			}
@@ -58,16 +58,16 @@ public class PickupObjects : MonoBehaviour {
 			dropObject ();
 		}
 
-
-
 		progressText.text = collectablesNeeded.ToString();
 		if (collectablesNeeded == 0) {
 			targetReached = true;
 		}
+
+		OpenBox ();
 	}
 
 	void PickupObject(Transform nearestObject){
-		playerAnim.SetTrigger("pickup");
+		playerAnim.SetBool("pickup", true);
 		float pickupHeight = nearestObject.position.y - transform.position.y;
 		//Vector3 pickupDistance = nearestObject.transform.position - this.transform.position;
 		//Debug.Log("pickup height = " + pickupHeight);
@@ -93,6 +93,7 @@ public class PickupObjects : MonoBehaviour {
 			collectablesNeeded -= 1;
 			inPocket += 1;
 			Debug.Log ("objects in pocket= " + inPocket);
+			playerAnim.SetBool("pickup", false);
 			}
 		}
 		
@@ -102,9 +103,8 @@ public class PickupObjects : MonoBehaviour {
 			TriggerList.Add(other);
 			//Debug.Log("adding " + other);
 		} if(!TriggerList.Contains(other) && other.gameObject == basket){
-			Debug.Log ("eggs in basket = " + rewardRelease);
+			Debug.Log ("eggs in basket = " + inBasket);
 			overBasket = true;
-			
 		}
 	}
 
@@ -136,12 +136,22 @@ public class PickupObjects : MonoBehaviour {
 		if (inPocket > 0 && !playerAnim.GetBool("drop")) {
 			playerAnim.SetBool ("drop", true);
 			if (overBasket) {
-				rewardRelease += 1;
+				inBasket += 1;
 				inPocket -= 1;
-				Debug.Log ("eggs in basket = " + rewardRelease);
+				Debug.Log ("eggs in basket = " + inBasket);
+
 			}
 		} 	
 	}
+
+	void OpenBox(){
+		if (inPocket == 0 && targetReached == true) {
+			boxOpen = true;
+			Debug.Log ("yeah! magic box now has to open");
+			boxAnim.SetBool ("BoxOpen", true);
+		}
+	}
+		
 }
 		
 	
