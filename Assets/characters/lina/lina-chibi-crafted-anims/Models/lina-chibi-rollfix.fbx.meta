@@ -462,8 +462,8 @@ ModelImporter:
     - serializedVersion: 16
       name: mature body|reach-down for object
       takeName: Armature body|reach-down for egg
-      firstFrame: 0
-      lastFrame: 101
+      firstFrame: 14
+      lastFrame: 93
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -504,8 +504,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature body|reach-out for object
       takeName: Armature body|reach-out for egg
-      firstFrame: 0
-      lastFrame: 87
+      firstFrame: 12
+      lastFrame: 84
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -547,8 +547,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature body|reach-up for object
       takeName: Armature body|reach-up for egg
-      firstFrame: 0
-      lastFrame: 90
+      firstFrame: 7
+      lastFrame: 85
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

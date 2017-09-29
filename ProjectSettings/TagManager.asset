@@ -9,6 +9,7 @@ TagManager:
   - Terrain
   - Chicken
   - collectable
+  - reward
   layers:
   - Default
   - TransparentFX

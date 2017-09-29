@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3b6114205cc4edbb01ce8b18e83b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwPrefab: {fileID: 1049972052534684}
+  dropPrefab: {fileID: 1049972052534684}

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ObjectScript : MonoBehaviour {
 
-	public GameObject throwPrefab;
+	public GameObject dropPrefab;
 	private GameObject parentBone;
 	private GameObject handheldObject;
 	private Color initialColor;
@@ -19,7 +19,7 @@ public class ObjectScript : MonoBehaviour {
 
 	public void CloneMe(){
 		parentBone = GameObject.Find("HandHolder");
-		handheldObject = Instantiate (throwPrefab, parentBone.transform) as GameObject;
+		handheldObject = Instantiate (dropPrefab, parentBone.transform) as GameObject;
 		handheldObject.name = "Handheld object";
 		Debug.Log ("cloned");
 		handheldObject.transform.localPosition = Vector3.zero;

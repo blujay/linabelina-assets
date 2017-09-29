@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1049972052534684}
   m_LocalRotation: {x: -0.78148586, y: -0.16854288, z: -0.015928272, w: -0.600516}
-  m_LocalPosition: {x: -573.10974, y: 946.06, z: -895.6152}
+  m_LocalPosition: {x: -591.445, y: 951.22, z: -880.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,6 +107,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3b6114205cc4edbb01ce8b18e83b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwPrefab: {fileID: 1049972052534684, guid: e54822ab5401748f088621099bc6e3a2,
-    type: 2}
-  playAnim: {fileID: 0}
+  dropPrefab: {fileID: 1049972052534684}

@@ -15,6 +15,7 @@ public class Throw : MonoBehaviour {
 
 	void CloneObject(){
 		//Debug.Log("Cloning");
+		playerAnim.SetBool ("drop", true);
 		throwPrefab.GetComponent <ObjectScript> ().CloneMe();
 	}
 

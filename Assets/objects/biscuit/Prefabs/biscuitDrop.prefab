@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114758074067383280}
   m_Layer: 0
   m_Name: biscuitDrop
-  m_TagString: Untagged
+  m_TagString: reward
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,9 +37,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1018427737984556}
-  m_LocalRotation: {x: 0.5060995, y: -0.3438608, z: 0.60875535, w: 0.50501484}
-  m_LocalPosition: {x: -0.019, y: 0.131, z: 0.175}
-  m_LocalScale: {x: 0.48860046, y: -0.00954, z: 0.48860034}
+  m_LocalRotation: {x: 0.81140107, y: -0.14223242, z: 0.38331723, w: 0.41769144}
+  m_LocalPosition: {x: 0.08, y: 0.21, z: 0.22}
+  m_LocalScale: {x: 0.48860055, y: -0.009540001, z: 0.4886004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,4 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3b6114205cc4edbb01ce8b18e83b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwPrefab: {fileID: 1018427737984556}
+  dropPrefab: {fileID: 1018427737984556}

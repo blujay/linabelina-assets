@@ -10,6 +10,7 @@ public class BoxScript : MonoBehaviour {
 	public AudioClip releaseSound;
 	public AudioClip gaspSound;
 	private AudioSource audio;
+	private PickupObjects pickupScript;
 
 
 	// Use this for initialization
@@ -30,8 +31,9 @@ public class BoxScript : MonoBehaviour {
 
 	void releaseReward (){
 		GameObject rewardObject = Instantiate (rewardPrefab, spawnPoint.transform) as GameObject;
-		rewardObject.transform.localPosition = Vector3.zero;
+		//rewardObject.transform.localPosition = Vector3.zero;
 		audio.PlayOneShot (releaseSound);
 		audio.PlayOneShot (gaspSound);
 	}
+		
 }
