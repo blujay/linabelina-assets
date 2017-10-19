@@ -132,11 +132,13 @@ public class PickupObjects : MonoBehaviour {
 		Transform nearestObject = null;
 		float minDist = Mathf.Infinity;
 		Vector3 currentPos = transform.position;
-		foreach (Collider Object in TriggerList){
-			float dist = Vector3.Distance(Object.transform.position, currentPos);
-			if (dist < minDist && Object.GetComponent<ObjectScript>()){
-				nearestObject = Object.transform;
-				minDist = dist;
+		foreach (Collider Object in TriggerList) {
+			if (Object.GetComponent<MeshCollider> ()) {
+				float dist = Vector3.Distance (Object.transform.position, currentPos);
+				if (dist < minDist && Object.GetComponent<ObjectScript> ()) {
+					nearestObject = Object.transform;
+					minDist = dist;
+				}
 			}
 		}
 		return nearestObject;

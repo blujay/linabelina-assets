@@ -20,11 +20,11 @@ public class ObjectScript : MonoBehaviour {
 	public void CloneMe(){
 		parentBone = GameObject.Find("HandHolder");
 		handheldObject = Instantiate (dropPrefab, parentBone.transform) as GameObject;
+		handheldObject.GetComponent<MeshCollider> ().enabled = false;
+		handheldObject.GetComponent<Rigidbody> ().useGravity = false;
 		handheldObject.name = "Handheld object";
 		Debug.Log ("cloned");
 		handheldObject.transform.localPosition = Vector3.zero;
-		handheldObject.GetComponent<MeshCollider> ().enabled = false;
-		handheldObject.GetComponent<Rigidbody> ().useGravity = false;
 
 	}
 

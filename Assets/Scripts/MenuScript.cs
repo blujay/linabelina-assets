@@ -46,6 +46,7 @@ public class MenuScript : MonoBehaviour {
 	public void LoadControls(){
 		controlsMenu.enabled = true;
 		startMenu.enabled = false;
+
 	}
 
 	public void CloseControlMenu(){
