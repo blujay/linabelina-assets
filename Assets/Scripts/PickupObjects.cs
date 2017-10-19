@@ -45,13 +45,15 @@ public class PickupObjects : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		nearestObject = FindNearestObject ();
-		Debug.Log (nearestObject);
-		//nearestObject.GetComponent<ObjectScript> ().HighlightOn ();
-
-
+		if (nearestObject) {
+			Debug.Log ("the nearest object to you is: " + nearestObject.gameObject.name);
+		}
+			
 		if (Input.GetButtonUp ("Fire1")) {
-			PickupObject (nearestObject);
-			//Debug.Log ("clicked mouse");
+			if (nearestObject) {
+				PickupObject (nearestObject);
+				//Debug.Log ("clicked mouse");
+			}
 		}
 
 		if(Input.GetKeyUp(KeyCode.R)) {
@@ -78,7 +80,12 @@ public class PickupObjects : MonoBehaviour {
 	}
 
 	public void SetParent(){
+		
 		ObjectToPick.transform.parent = parentBone.transform;
+		if (ObjectToPick.GetComponent<Rigidbody> ()) {
+			ObjectToPick.GetComponent<Rigidbody> ().isKinematic = true;
+			ObjectToPick.GetComponent<MeshCollider> ().enabled = false;
+		}
 		ObjectToPick.transform.localPosition = Vector3.zero;
 		ObjectToPick.transform.localRotation = Quaternion.identity;
 
@@ -89,23 +96,32 @@ public class PickupObjects : MonoBehaviour {
 		if (ObjectToPick.gameObject.CompareTag ("collectable")) {
 			GetComponent<AudioSource>().PlayOneShot(pickupSound, 1F);
 		}
+			
 	}
 
 
 	public void DestroyObject(){
 		if (ObjectToPick){
+			Debug.Log ("object to pick is: " + ObjectToPick.gameObject.name);
 			if (targetReached && ObjectToPick.gameObject.CompareTag ("reward")) {
 				GetComponent<AudioSource>().PlayOneShot(rewardSound, 1F);
-				Destroy (ObjectToPick.gameObject);
+				Destroy (ObjectToPick);
 				rewardsReleased = +1;
 				Debug.Log ("biscuits rewarded = " + rewardsReleased);
 			}
+
 			if (ObjectToPick.gameObject.CompareTag ("collectable")) {
 				GetComponent<AudioSource>().PlayOneShot(dropSound, 1F);
-				Destroy (ObjectToPick.gameObject);
+				//check if the collider list still has this object in and remove it if it does
+				if (TriggerList.Contains (ObjectToPick.GetComponent<MeshCollider>())) {
+					TriggerList.Remove (ObjectToPick.GetComponent<MeshCollider>());
+				}
+				//put the object in pocket and make it vanish
+				Destroy (ObjectToPick);
 				inPocket += 1;
 				Debug.Log ("objects in pocket= " + inPocket);
 				collectablesNeeded -= 1;
+
 			}
 			ObjectToPick = null;
 			nearestObject = null;
@@ -115,16 +131,25 @@ public class PickupObjects : MonoBehaviour {
 		
 	
 	void OnTriggerEnter(Collider other){
-		if(!TriggerList.Contains(other) && other.gameObject.CompareTag("collectable")|| other.gameObject.CompareTag("reward")){
-			TriggerList.Add(other);
-			if (other.GetComponent <ObjectScript> ()) {
-				other.GetComponent<ObjectScript> ().HighlightOn ();
+		if (other.gameObject.CompareTag ("collectable")) {
+			Debug.Log ("I am a collectable object so look at me!: " + other.gameObject.name);
+
+
+			//add the object to the trigger list only if it's a collectable or reward
+			if (!TriggerList.Contains (other) && other.gameObject.CompareTag ("collectable") || other.gameObject.CompareTag ("reward")) {
+				TriggerList.Add (other);
+
+				//highlight the object so that we can see it
+				if (other.GetComponent <ObjectScript> ()) {
+					other.GetComponent<ObjectScript> ().HighlightOn ();
+				}
 			}
-			//Debug.Log("adding " + other);
-		} if(!TriggerList.Contains(other) && other.gameObject == basket){
-			Debug.Log ("eggs in basket = " + inBasket);
+		} else if (other == basket) {
+			Debug.Log ("I am a basket  - I have this many eggs in me: " + inBasket);
 			overBasket = true;
 			//Debug.Log("adding " + other);
+		} else {
+			Debug.Log ("I am not a collectable object - ignore me please!: " + other.gameObject.name);
 		}
 	}
 
@@ -133,12 +158,10 @@ public class PickupObjects : MonoBehaviour {
 		float minDist = Mathf.Infinity;
 		Vector3 currentPos = transform.position;
 		foreach (Collider Object in TriggerList) {
-			if (Object.GetComponent<MeshCollider> ()) {
-				float dist = Vector3.Distance (Object.transform.position, currentPos);
-				if (dist < minDist && Object.GetComponent<ObjectScript> ()) {
-					nearestObject = Object.transform;
-					minDist = dist;
-				}
+			float dist = Vector3.Distance (Object.transform.position, currentPos);
+			if (dist < minDist && Object.GetComponent<ObjectScript> ()) {
+				nearestObject = Object.transform;
+				minDist = dist;
 			}
 		}
 		return nearestObject;
