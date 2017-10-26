@@ -46,7 +46,7 @@ public class PickupObjects : MonoBehaviour {
 	void Update () {
 		nearestObject = FindNearestObject ();
 		if (nearestObject) {
-			Debug.Log ("the nearest object to you is: " + nearestObject.gameObject.name);
+			//Debug.Log ("the nearest object to you is: " + nearestObject.gameObject.name);
 		}
 			
 		if (Input.GetButtonUp ("Fire1")) {
@@ -101,15 +101,18 @@ public class PickupObjects : MonoBehaviour {
 
 
 	public void DestroyObject(){
+		//check if there is an object picked up
+
 		if (ObjectToPick){
-			Debug.Log ("object to pick is: " + ObjectToPick.gameObject.name);
+			//if the object selected is a reward like a biscuit then destroy it and play a 'reward' sound when it reaches the pocket
+			//Debug.Log ("object to pick is: " + ObjectToPick.gameObject.name);
 			if (targetReached && ObjectToPick.gameObject.CompareTag ("reward")) {
 				GetComponent<AudioSource>().PlayOneShot(rewardSound, 1F);
 				Destroy (ObjectToPick);
 				rewardsReleased = +1;
 				Debug.Log ("biscuits rewarded = " + rewardsReleased);
 			}
-
+			//if the object selected is a collectable like an 'egg' then destroy it and play a 'collectable' sound when it reaches the pocket
 			if (ObjectToPick.gameObject.CompareTag ("collectable")) {
 				GetComponent<AudioSource>().PlayOneShot(dropSound, 1F);
 				//check if the collider list still has this object in and remove it if it does
@@ -132,9 +135,7 @@ public class PickupObjects : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("collectable")) {
-			Debug.Log ("I am a collectable object so look at me!: " + other.gameObject.name);
-
-
+			//Debug.Log ("I am a collectable object so look at me!: " + other.gameObject.name);
 			//add the object to the trigger list only if it's a collectable or reward
 			if (!TriggerList.Contains (other) && other.gameObject.CompareTag ("collectable") || other.gameObject.CompareTag ("reward")) {
 				TriggerList.Add (other);
@@ -145,11 +146,11 @@ public class PickupObjects : MonoBehaviour {
 				}
 			}
 		} else if (other == basket) {
-			Debug.Log ("I am a basket  - I have this many eggs in me: " + inBasket);
+			//Debug.Log ("I am a basket  - I have this many eggs in me: " + inBasket);
 			overBasket = true;
 			//Debug.Log("adding " + other);
 		} else {
-			Debug.Log ("I am not a collectable object - ignore me please!: " + other.gameObject.name);
+			//Debug.Log ("I am not a collectable object - ignore me please!: " + other.gameObject.name);
 		}
 	}
 
