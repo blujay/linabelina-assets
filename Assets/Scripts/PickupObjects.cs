@@ -14,20 +14,22 @@ public class PickupObjects : MonoBehaviour {
 	public AudioClip dropSound = null;
 	public AudioClip rewardSound = null;
 	public int collectablesTarget;
+	public int rewardsReleased;
 	public Text progressText;
 	public GameObject box;
+	public GameObject rewardPrefab = null;
+	public GameObject rewardSpawnPoint;
 	public GameObject basket;
 
-	private int collectablesNeeded;
+	public int collectablesNeeded;
 	private int inPocket;
 	private int inBasket;
-	private int rewardsReleased;
 	private bool overBasket;
 	private GameObject ObjectToPick = null;
 	private Animator playerAnim;
 	private Animator boxAnim;
 	private Transform nearestObject = null;
-	private bool targetReached = false;
+	public bool targetReached = false;
 	private BoxScript boxScript;
 	private ObjectScript objectScript;
 
@@ -61,12 +63,6 @@ public class PickupObjects : MonoBehaviour {
 		}
 
 		progressText.text = collectablesNeeded.ToString();
-
-		if (collectablesNeeded == 0) {
-			targetReached = true;
-		}
-
-		OpenBox ();
 	}
 
 	void PickupObject(Transform nearestObject){
@@ -106,25 +102,35 @@ public class PickupObjects : MonoBehaviour {
 		if (ObjectToPick){
 			//if the object selected is a reward like a biscuit then destroy it and play a 'reward' sound when it reaches the pocket
 			//Debug.Log ("object to pick is: " + ObjectToPick.gameObject.name);
-			if (targetReached && ObjectToPick.gameObject.CompareTag ("reward")) {
-				GetComponent<AudioSource>().PlayOneShot(rewardSound, 1F);
-				Destroy (ObjectToPick);
-				rewardsReleased = +1;
-				Debug.Log ("biscuits rewarded = " + rewardsReleased);
-			}
+
 			//if the object selected is a collectable like an 'egg' then destroy it and play a 'collectable' sound when it reaches the pocket
 			if (ObjectToPick.gameObject.CompareTag ("collectable")) {
 				GetComponent<AudioSource>().PlayOneShot(dropSound, 1F);
+
 				//check if the collider list still has this object in and remove it if it does
 				if (TriggerList.Contains (ObjectToPick.GetComponent<MeshCollider>())) {
 					TriggerList.Remove (ObjectToPick.GetComponent<MeshCollider>());
 				}
 				//put the object in pocket and make it vanish
 				Destroy (ObjectToPick);
+				//add one egg to the pocket
 				inPocket += 1;
 				Debug.Log ("objects in pocket= " + inPocket);
 				collectablesNeeded -= 1;
 
+			}
+
+			if (ObjectToPick.gameObject.CompareTag ("reward")) {
+				GetComponent<AudioSource>().PlayOneShot(rewardSound, 1F);
+
+				//check if the collider list still has this object in and remove it if it does
+				if (TriggerList.Contains (ObjectToPick.GetComponent<MeshCollider>())) {
+					TriggerList.Remove (ObjectToPick.GetComponent<MeshCollider>());
+				}
+				//put the object in pocket and make it vanish
+				Destroy (ObjectToPick);
+				rewardsReleased += 1;
+				//Debug.Log ("biscuits rewarded = " + rewardsReleased);
 			}
 			ObjectToPick = null;
 			nearestObject = null;
@@ -134,7 +140,7 @@ public class PickupObjects : MonoBehaviour {
 		
 	
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.CompareTag ("collectable")) {
+		if (other.gameObject.CompareTag ("collectable")|| other.gameObject.CompareTag ("reward")) {
 			//Debug.Log ("I am a collectable object so look at me!: " + other.gameObject.name);
 			//add the object to the trigger list only if it's a collectable or reward
 			if (!TriggerList.Contains (other) && other.gameObject.CompareTag ("collectable") || other.gameObject.CompareTag ("reward")) {
@@ -145,7 +151,7 @@ public class PickupObjects : MonoBehaviour {
 					other.GetComponent<ObjectScript> ().HighlightOn ();
 				}
 			}
-		} else if (other == basket) {
+		} else if (other.gameObject == basket) {
 			//Debug.Log ("I am a basket  - I have this many eggs in me: " + inBasket);
 			overBasket = true;
 			//Debug.Log("adding " + other);
@@ -181,25 +187,31 @@ public class PickupObjects : MonoBehaviour {
 	}
 
 	void dropObject(){
-		if (inPocket > 0 && !playerAnim.GetBool("drop")) {
+		if (overBasket && inPocket > 0 && !playerAnim.GetBool("drop")) {
 			playerAnim.SetBool ("drop", true);
-			if (overBasket) {
-				inBasket += 1;
-				inPocket -= 1;
-				Debug.Log ("eggs in basket = " + inBasket);
+			inBasket += 1;
+			inPocket -= 1;
+			Debug.Log ("eggs in basket = " + inBasket);
+		}
+		if (inBasket == collectablesTarget){
+			boxAnim.SetBool ("openBox", true);
+		}
+	}
 
-			}
-		} 	
+	IEnumerator WaitTime() {
+		yield return new WaitForSeconds(2);
 	}
 
 	void OpenBox(){
-		if (inPocket == 0 && targetReached == true) {
-			Debug.Log ("yeah! magic box now has to open");
-			boxAnim.SetBool ("BoxOpen", true);
-			rewardsReleased = 0;
+		if (inBasket == collectablesTarget){
+			boxAnim.SetBool ("openBox", true);
+		} 
+	}
+
+	void CloseBox(){
+		if (rewardsReleased == collectablesTarget) {
+			boxAnim.SetBool ("openBox", false);
 		}
 	}
 		
 }
-		
-	

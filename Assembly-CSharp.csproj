@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\animations\hopping-tree\scripts\treeBend.cs" />
-     <Compile Include="Assets\BoxScript.cs" />
      <Compile Include="Assets\Particle Ingredient Pack\Script\csColorChangerinSampleScene.cs" />
      <Compile Include="Assets\Particle Ingredient Pack\Script\csDemoScenceControl.cs" />
      <Compile Include="Assets\Particle Ingredient Pack\Script\csParticleMake.cs" />
@@ -62,6 +61,7 @@
      <Compile Include="Assets\Particle Ingredient Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
      <Compile Include="Assets\Scripts\ActionPoint.cs" />
      <Compile Include="Assets\Scripts\BasketScript.cs" />
+     <Compile Include="Assets\Scripts\BoxScript.cs" />
      <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\Scripts\EasyFadeIn.cs" />
      <Compile Include="Assets\Scripts\EggCollector.cs" />
