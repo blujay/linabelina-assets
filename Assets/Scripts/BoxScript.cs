@@ -38,7 +38,7 @@ public class BoxScript : MonoBehaviour {
 		for (int r = 1; r <= rewardTarget; r++) {
 			GameObject rewardObject = Instantiate (rewardPrefab, spawnPoint.transform) as GameObject;
 			rewardObject.transform.localPosition = Vector3.zero;
-			rewardObject.GetComponent<Rigidbody> ().AddForce (this.transform.forward * 5);
+			rewardObject.GetComponent<Rigidbody> ().AddForce (this.transform.up);
 		}
 
 
