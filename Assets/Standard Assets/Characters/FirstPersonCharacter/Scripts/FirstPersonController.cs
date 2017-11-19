@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+        [SerializeField] private bool m_IsCrouching;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -37,13 +38,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private CollisionFlags m_CollisionFlags;
         private bool m_PreviouslyGrounded;
         private Vector3 m_OriginalCameraPosition;
-        private float m_StepCycle;
+        private Vector3 m_PreviousCameraPosition;
+		private float m_StepCycle;
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+		private float m_goalCameraPosition;
 
-        // Use this for initialization
-        private void Start()
+        private const float m_CROUCH_OFFSET = 0.25f;
+		private const float m_CROUCH_TIME = 4;
+		private float m_cameraMoveTimer = 0;
+		private bool m_crouchAnimActive = false;
+
+		// Use this for initialization
+		private void Start()
         {
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
@@ -67,6 +75,26 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            if (CrossPlatformInputManager.GetButtonDown("Crouch"))
+            {
+                m_IsCrouching = !m_IsCrouching;
+                if (m_IsCrouching)
+                {
+					m_goalCameraPosition = m_OriginalCameraPosition.y - GetComponent<CharacterController>().height * m_CROUCH_OFFSET;
+                } else {
+					m_goalCameraPosition = m_OriginalCameraPosition.y;
+				}
+				m_PreviousCameraPosition = m_Camera.transform.localPosition;
+				m_crouchAnimActive = true;
+				m_cameraMoveTimer = 0;
+			}
+			if (m_crouchAnimActive) {
+				m_cameraMoveTimer = Mathf.Clamp(m_cameraMoveTimer + Time.deltaTime*m_CROUCH_TIME, m_cameraMoveTimer + Time.deltaTime* m_CROUCH_TIME, 1);
+				if(m_cameraMoveTimer == 1) {
+					m_crouchAnimActive = false;
+				}
+			}
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -184,7 +212,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 return;
             }
-            if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded)
+
+            if (m_CharacterController.velocity.magnitude > 0 && m_CharacterController.isGrounded && !m_IsCrouching)
             {
                 m_Camera.transform.localPosition =
                     m_HeadBob.DoHeadBob(m_CharacterController.velocity.magnitude +
@@ -192,11 +221,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
             }
-            else
+            else if(m_crouchAnimActive) {
+				newCameraPosition = m_Camera.transform.localPosition;
+				newCameraPosition.y = Mathf.Lerp(m_PreviousCameraPosition.y, m_goalCameraPosition, m_cameraMoveTimer);
+			}
+			else if(!m_IsCrouching)
             {
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
-            }
+            } else {
+				newCameraPosition = m_Camera.transform.localPosition;
+				newCameraPosition.y = m_Camera.transform.localPosition.y - m_JumpBob.Offset();
+			}
             m_Camera.transform.localPosition = newCameraPosition;
         }
 
@@ -255,5 +291,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
-    }
+
+		private void OnCollisionEnter(Collision collision)
+		{
+			if (collision.gameObject.CompareTag("Egg")) {
+				Debug.Log("Egg collected");
+			}
+		}
+	}
 }
