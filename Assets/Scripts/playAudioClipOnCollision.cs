@@ -28,7 +28,7 @@ public class playAudioClipOnCollision : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		if (other.gameObject.tag == GameTag) {
 			playSound();
-			//Debug.Log ("collided with " + GameTag);
+			Debug.Log ("collided with " + GameTag);
 		}
 	}
 
